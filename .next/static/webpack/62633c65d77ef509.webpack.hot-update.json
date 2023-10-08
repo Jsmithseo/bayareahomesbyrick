@@ -1,0 +1,9 @@
+{
+  "c": ["pages/index", "webpack"],
+  "r": [],
+  "m": [
+    "./node_modules/@mui/base/TextareaAutosize/TextareaAutosize.js",
+    "./node_modules/@mui/base/TextareaAutosize/TextareaAutosize.types.js",
+    "./node_modules/@mui/base/TextareaAutosize/index.js"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "c": ["pages/index", "webpack"],
+  "r": [],
+  "m": [
+    "./node_modules/@mui/material/Stack/Stack.js",
+    "./node_modules/@mui/material/Stack/index.js",
+    "./node_modules/@mui/material/Stack/stackClasses.js"
+  ]
+}
