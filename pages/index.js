@@ -17,6 +17,9 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import bannerImage from '../public/bannerImage.jpeg';
+import bannerImage2 from '../public/bannerImage2.jpeg';
+
+import Chris from '../public/image6.jpeg';
 import Lesson from '../public/lesson.jpeg';
 import Image from 'next/image';
 
@@ -31,7 +34,7 @@ const BannerStyles = {
 };
 
 const BannerStyles2 = {
-  backgroundImage: `url('${bannerImage.src}')`,
+  backgroundImage: `url('${bannerImage2.src}')`,
   backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
@@ -39,6 +42,29 @@ const BannerStyles2 = {
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
 };
+
+const ChrisPhoto = {
+  backgroundImage: `url('${Chris.src}')`,
+  backgroundColor: 'rgba(255, 0, 0, 0.3)',
+  color: '#fff',
+  textAlign: 'center',
+  height: '100%',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+};
+
+
+const LessonPhoto = {
+  backgroundImage: `url('${Lesson.src}')`,
+  backgroundColor: 'rgba(255, 0, 0, 0.3)',
+  color: '#fff',
+  textAlign: 'center',
+  height: '100%',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+};
+
+
 
 function Copyright() {
   return (
@@ -100,43 +126,45 @@ export default function Album() {
         <Container sx={{ py: 10 }} maxWidth="lg">
           {/* End hero unit */}
           <Container component="main" sx={{ mt: 2, mb: 4 }} maxWidth="lg">
-            <Typography variant="h2" component="h1" gutterBottom>
-              About Chris Curnett
-            </Typography>
-            <Typography variant="h6" component="h6" gutterBottom>
-              Chris Curnutt is originally from Oklahoma and began his golf
-              journey at 5 years old in a suburb of Tulsa. He grew up playing
-              multiple sports, including soccer and baseball, but decided at the
-              age of 15 to focus on golf. In high school, Chris was a member of
-              his High School team which amassed over 25 wins, including 3
-              consecutive Oklahoma State Championships. After attending the
-              University of Arkansas with a major in Education, Chris began his
-              career in golf at Shadow Valley CC in Bentonville, AR. Here, he
-              was involved in the instruction program as well as day to day
-              operations. He continued his career at Emerald Falls GC in Broken
-              Arrow, OK, as an Assistant Professional. After moving to the
-              Oklahoma City area, Chris instructed on a part time basis while
-              pursuing a career in restaurant management. 10 years later, Chris
-              and his girlfriend Samantha moved to Northern California and the
-              decision was made that he would return to teaching full time.
-              Chris is currently an instructor at Blue Rock Springs GC in
-              Vallejo, CA 
-            </Typography>
-
-            <Typography variant="h2" component="h1" gutterBottom>
-              <center>Lessons</center>
-            </Typography>
             <Grid container spacing={2}>
               <Grid item xs={4}>
-                <item>
-                  <Image
-                    src={Lesson}
-                    alt="Description of Image"
-                    width={300}
-                    height={300}
+                <Card sx={{ maxWidth: 345 }}   style={ChrisPhoto}>
+                  <CardMedia
+                    sx={{ height: 300 }}
                   />
+                </Card>
+              </Grid>
+              <Grid item xs={8}>
+                <item>
+                  {/* <Typography variant="h2" component="h1" gutterBottom>
+              About Chris Curnett
+            </Typography> */}
+                  <Typography variant="h6" component="h6" gutterBottom>
+                    Chris Curnutt is originally from Oklahoma and began his golf
+                    journey at 5 years old in a suburb of Tulsa. He grew up
+                    playing multiple sports, including soccer and baseball, but
+                    decided at the age of 15 to focus on golf. In high school,
+                    Chris was a member of his High School team which amassed
+                    over 25 wins, including 3 consecutive Oklahoma State
+                    Championships. After attending the University of Arkansas
+                    with a major in Education, Chris began his career in golf at
+                    Shadow Valley CC in Bentonville, AR. Here, he was involved
+                    in the instruction program as well as day to day operations.
+                    He continued his career at Emerald Falls GC in Broken Arrow,
+                    OK, as an Assistant Professional. After moving to the
+                    Oklahoma City area, Chris instructed on a part time basis
+                    while pursuing a career in restaurant management. 10 years
+                    later, Chris and his girlfriend Samantha moved to Northern
+                    California and the decision was made that he would return to
+                    teaching full time. Chris is currently an instructor at Blue
+                    Rock Springs GC in Vallejo, CA
+                  </Typography>
                 </item>
               </Grid>
+            </Grid>
+
+
+            <Grid container spacing={2} sx={{ mt: 10, mb: 4 }}>
               <Grid item xs={8}>
                 <item>
                   <Typography variant="h6" component="h6" gutterBottom>
@@ -154,36 +182,45 @@ export default function Album() {
                   </Typography>
                 </item>
               </Grid>
-            </Grid>
-            <Container>
-                <item>
-                  <Typography variant="h3" gutterBottom>
-                    3256 lessons since 2020
-                  </Typography>
-                </item>
-              </Container>
-            <Grid container spacing={2} sx={{ mt: 2, mb: 4 }}>
-
               <Grid item xs={4}>
                 <item>
+                <Card sx={{ maxWidth: 345 }}   style={LessonPhoto}>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                  />
+                </Card>
+                </item>
+              </Grid>
+            </Grid>
+            <Grid container spacing={2} sx={{ mt: 2, mb: 4 }}>
+              <Grid item xs={3}>
+                <item>
+                  <Typography variant="h5" gutterBottom>
+                    3256 <br />
+                    lessons since 2020
+                  </Typography>
+                </item>
+              </Grid>
+              <Grid item xs={3}>
+                <item>
                   <Typography variant="h5" component="h6" gutterBottom>
-                    8K+ <br/>
+                    8K+ <br />
                     lessons career
                   </Typography>
                 </item>
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={3}>
                 <item>
                   <Typography variant="h5" component="h6" gutterBottom>
-                    650+ <br/>
+                    650+ <br />
                     golfers helped
                   </Typography>
                 </item>
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={3}>
                 <item>
                   <Typography variant="h5" component="h6" gutterBottom>
-                    95% <br/>
+                    95% <br />
                     goals reached
                   </Typography>
                 </item>
@@ -195,8 +232,7 @@ export default function Album() {
                 pb: 70,
               }}
               style={BannerStyles2}
-            >
-            </Box>
+            ></Box>
           </Container>
         </Container>
       </main>

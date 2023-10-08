@@ -18,8 +18,7 @@ export default function Thankyou() {
       <Container>
         <Row>
           <Col md="12">
-            <center>
-            </center>
+            <center></center>
             <div className="bio-content">
               <div style={copyStyle}>
                 Thanks for reaching out, Ill be in touch soon!
