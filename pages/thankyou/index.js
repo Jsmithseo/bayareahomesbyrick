@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
-import Image from 'next/image';
 
 const MainStyle = {
   overflowX: 'hidden',
@@ -20,12 +19,6 @@ export default function Thankyou() {
         <Row>
           <Col md="12">
             <center>
-              <Image
-                src={Logo}
-                alt="Description of Image"
-                width={300}
-                height={300}
-              />
             </center>
             <div className="bio-content">
               <div style={copyStyle}>
