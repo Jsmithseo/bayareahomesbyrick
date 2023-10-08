@@ -53,7 +53,6 @@ const ChrisPhoto = {
   backgroundRepeat: 'no-repeat',
 };
 
-
 const LessonPhoto = {
   backgroundImage: `url('${Lesson.src}')`,
   backgroundColor: 'rgba(255, 0, 0, 0.3)',
@@ -63,8 +62,6 @@ const LessonPhoto = {
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
 };
-
-
 
 function Copyright() {
   return (
@@ -97,18 +94,28 @@ export default function Album() {
         }}
       >
         <Toolbar>
-          <Typography color="black" component="div" sx={{ flexGrow: 1 }}>
-            <b>Chris Curnett</b> Golf
-          </Typography>
-          <IconButton
-            size="large"
-            edge="end"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
+          <Grid container spacing={2}>
+            <Grid xs={6} md={8}>
+              <Typography
+                variant="h4"
+                color="black"
+                component="div"
+                sx={{ flexGrow: 1 }}
+              >
+                <b>Chris Curnett</b> Golf
+              </Typography>
+            </Grid>
+            <Grid xs={6} md={4}>
+              <Typography
+                variant="h4"
+                color="black"
+                component="div"
+                sx={{ flexGrow: 1 }}
+              >
+                918 -373-4999
+              </Typography>
+            </Grid>
+          </Grid>
         </Toolbar>
       </AppBar>
       <main>
@@ -120,82 +127,77 @@ export default function Album() {
             pb: 80,
           }}
           style={BannerStyles}
-        >
-          <Container maxWidth="lg"></Container>
-        </Box>
-        <Container sx={{ py: 10 }} maxWidth="lg">
-          {/* End hero unit */}
-          <Container component="main" sx={{ mt: 2, mb: 4 }} maxWidth="lg">
-            <Grid container spacing={2}>
-              <Grid item xs={4}>
-                <Card sx={{ maxWidth: 345 }}   style={ChrisPhoto}>
-                  <CardMedia
-                    sx={{ height: 300 }}
-                  />
-                </Card>
-              </Grid>
-              <Grid item xs={8}>
-                <item>
-                  {/* <Typography variant="h2" component="h1" gutterBottom>
+        ></Box>
+        {/* End hero unit */}
+        <Container component="main" sx={{ mt: 2, mb: 4 }} maxWidth="lg">
+          <Grid container spacing={2}>
+            <Grid item xs={4}>
+              <Card sx={{ maxWidth: 345 }} style={ChrisPhoto}>
+                <CardMedia sx={{ height: 300 }} />
+              </Card>
+            </Grid>
+            <Grid item xs={8}>
+              <item>
+                {/* <Typography variant="h2" component="h1" gutterBottom>
               About Chris Curnett
             </Typography> */}
-                  <Typography variant="h6" component="h6" gutterBottom>
-                    Chris Curnutt is originally from Oklahoma and began his golf
-                    journey at 5 years old in a suburb of Tulsa. He grew up
-                    playing multiple sports, including soccer and baseball, but
-                    decided at the age of 15 to focus on golf. In high school,
-                    Chris was a member of his High School team which amassed
-                    over 25 wins, including 3 consecutive Oklahoma State
-                    Championships. After attending the University of Arkansas
-                    with a major in Education, Chris began his career in golf at
-                    Shadow Valley CC in Bentonville, AR. Here, he was involved
-                    in the instruction program as well as day to day operations.
-                    He continued his career at Emerald Falls GC in Broken Arrow,
-                    OK, as an Assistant Professional. After moving to the
-                    Oklahoma City area, Chris instructed on a part time basis
-                    while pursuing a career in restaurant management. 10 years
-                    later, Chris and his girlfriend Samantha moved to Northern
-                    California and the decision was made that he would return to
-                    teaching full time. Chris is currently an instructor at Blue
-                    Rock Springs GC in Vallejo, CA
-                  </Typography>
-                </item>
-              </Grid>
+                <Typography variant="h6" component="h6" gutterBottom>
+                  Chris Curnutt is originally from Oklahoma and began his golf
+                  journey at 5 years old in a suburb of Tulsa. He grew up
+                  playing multiple sports, including soccer and baseball, but
+                  decided at the age of 15 to focus on golf. In high school,
+                  Chris was a member of his High School team which amassed over
+                  25 wins, including 3 consecutive Oklahoma State Championships.
+                  After attending the University of Arkansas with a major in
+                  Education, Chris began his career in golf at Shadow Valley CC
+                  in Bentonville, AR. Here, he was involved in the instruction
+                  program as well as day to day operations. He continued his
+                  career at Emerald Falls GC in Broken Arrow, OK, as an
+                  Assistant Professional. After moving to the Oklahoma City
+                  area, Chris instructed on a part time basis while pursuing a
+                  career in restaurant management. 10 years later, Chris and his
+                  girlfriend Samantha moved to Northern California and the
+                  decision was made that he would return to teaching full time.
+                  Chris is currently an instructor at Blue Rock Springs GC in
+                  Vallejo, CA
+                </Typography>
+              </item>
             </Grid>
+          </Grid>
 
-
-            <Grid container spacing={2} sx={{ mt: 10, mb: 4 }}>
-              <Grid item xs={8}>
-                <item>
-                  <Typography variant="h6" component="h6" gutterBottom>
-                    Chris Curnutt's teaching style is characterized by a deep
-                    passion for golf and a commitment to holistic development.
-                    Drawing from a wealth of experience, he focuses on
-                    cultivating a strong foundation in his students, emphasizing
-                    not only technical skills but also core values. As an
-                    instructor, Chris leverages a diverse set of tools and
-                    techniques to enhance learning. He utilizes Operation 36, V1
-                    video analysis, and Hackmotion technology to provide
-                    structured and goal-oriented lessons. This combination of
-                    tools allows him to offer precise feedback and tailored
-                    guidance to his students.
-                  </Typography>
-                </item>
-              </Grid>
-              <Grid item xs={4}>
-                <item>
-                <Card sx={{ maxWidth: 345 }}   style={LessonPhoto}>
-                  <CardMedia
-                    sx={{ height: 300 }}
-                  />
+          <Grid container spacing={2} sx={{ mt: 10, mb: 4 }}>
+            <Grid item xs={8}>
+              <item>
+                <Typography variant="h6" component="h6" gutterBottom>
+                  Chris Curnutt's teaching style is characterized by a deep
+                  passion for golf and a commitment to holistic development.
+                  Drawing from a wealth of experience, he focuses on cultivating
+                  a strong foundation in his students, emphasizing not only
+                  technical skills but also core values. As an instructor, Chris
+                  leverages a diverse set of tools and techniques to enhance
+                  learning. He utilizes Operation 36, V1 video analysis, and
+                  Hackmotion technology to provide structured and goal-oriented
+                  lessons. This combination of tools allows him to offer precise
+                  feedback and tailored guidance to his students.
+                </Typography>
+              </item>
+            </Grid>
+            <Grid item xs={4}>
+              <item>
+                <Card sx={{ maxWidth: 345 }} style={LessonPhoto}>
+                  <CardMedia sx={{ height: 300 }} />
                 </Card>
-                </item>
-              </Grid>
+              </item>
             </Grid>
+          </Grid>
+        </Container>
+
+        <Toolbar style={{ backgroundColor: '#353535' }}>
+          <Container>
             <Grid container spacing={2} sx={{ mt: 2, mb: 4 }}>
               <Grid item xs={3}>
                 <item>
-                  <Typography variant="h5" gutterBottom>
+                  <Typography variant="h5" gutterBottom color="#fff">
                     3256 <br />
                     lessons since 2020
                   </Typography>
@@ -203,7 +205,12 @@ export default function Album() {
               </Grid>
               <Grid item xs={3}>
                 <item>
-                  <Typography variant="h5" component="h6" gutterBottom>
+                  <Typography
+                    variant="h5"
+                    component="h6"
+                    gutterBottom
+                    color="#fff"
+                  >
                     8K+ <br />
                     lessons career
                   </Typography>
@@ -211,7 +218,12 @@ export default function Album() {
               </Grid>
               <Grid item xs={3}>
                 <item>
-                  <Typography variant="h5" component="h6" gutterBottom>
+                  <Typography
+                    variant="h5"
+                    component="h6"
+                    gutterBottom
+                    color="#fff"
+                  >
                     650+ <br />
                     golfers helped
                   </Typography>
@@ -219,22 +231,54 @@ export default function Album() {
               </Grid>
               <Grid item xs={3}>
                 <item>
-                  <Typography variant="h5" component="h6" gutterBottom>
+                  <Typography
+                    variant="h5"
+                    component="h6"
+                    gutterBottom
+                    color="#fff"
+                  >
                     95% <br />
                     goals reached
                   </Typography>
                 </item>
               </Grid>
             </Grid>
-            <Box
-              sx={{
-                bgcolor: 'background.paper',
-                pb: 70,
-              }}
-              style={BannerStyles2}
-            ></Box>
           </Container>
-        </Container>
+        </Toolbar>
+        <Box
+          sx={{
+            bgcolor: 'background.paper',
+            pb: 70,
+          }}
+          style={BannerStyles2}
+        ></Box>
+        <Toolbar>
+          <Grid container>
+            <Grid item xs="8">
+              <item>Contact</item>
+            </Grid>
+            <Grid item xs="2">
+              <item>
+                <Typography>
+                714 Contra Costa Blvd.
+                </Typography>
+                
+                <br />
+                <Typography>
+                Pleasant Hill, CA 94523
+                </Typography>
+                <br />
+                <Typography>
+                Email: chris.curnutt59@gmail.com
+                </Typography>
+                <br />
+                <Typography>
+                Instagram: @chriscurnuttgolf
+                </Typography>
+              </item>
+            </Grid>
+          </Grid>
+        </Toolbar>
       </main>
     </ThemeProvider>
   );
