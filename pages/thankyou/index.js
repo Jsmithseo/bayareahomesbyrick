@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import Image from 'next/image';
-import Logo from '../../public/logo.PNG';
 
 const MainStyle = {
   overflowX: 'hidden',
