@@ -39,10 +39,11 @@ const ROLES = [
 
 const BannerStyles = {
   backgroundImage: `url('${bannerImage.src}')`,
+  backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
   height: 'auto',
-  backgroundSize: 'contain',
+  backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   postion: 'relative',
   width: '100%',
@@ -50,6 +51,7 @@ const BannerStyles = {
 
 const BannerStyles2 = {
   backgroundImage: `url('${bannerImage2.src}')`,
+  backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
   height: 'auto',
@@ -61,6 +63,7 @@ const BannerStyles2 = {
 
 const ChrisPhoto = {
   backgroundImage: `url('${Chris.src}')`,
+  backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
   height: 'auto',
@@ -72,10 +75,11 @@ const ChrisPhoto = {
 
 const LessonPhoto = {
   backgroundImage: `url('${Lesson.src}')`,
+  backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
   height: 'auto',
-  backgroundSize: 'contain',
+  backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   postion: 'relative',
   width: '100%',
@@ -118,7 +122,7 @@ export default function Album() {
                 variant="h4"
                 color="black"
                 component="div"
-                sx={{ flexGrow: 1 }}
+                sx={{ flexShrink: 1 }}
               >
                 <b>Chris Curnett</b> Golf
               </Typography>
@@ -148,7 +152,7 @@ export default function Album() {
         >
           <div style={{ paddingTop: '200px' }}>
             <Typed
-              style={{ fontSize: '50px', backgroundColor: '#353535' }}
+              style={{ fontSize: '3rem', backgroundColor: '#353535' }}
               loop
               strings={ROLES}
               typeSpeed={50}
