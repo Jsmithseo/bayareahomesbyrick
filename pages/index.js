@@ -39,11 +39,10 @@ const ROLES = [
 
 const BannerStyles = {
   backgroundImage: `url('${bannerImage.src}')`,
-  backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
   height: 'auto',
-  backgroundSize: 'cover',
+  backgroundSize: 'contain',
   backgroundRepeat: 'no-repeat',
   postion: 'relative',
   width: '100%',
@@ -51,7 +50,6 @@ const BannerStyles = {
 
 const BannerStyles2 = {
   backgroundImage: `url('${bannerImage2.src}')`,
-  backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
   height: 'auto',
@@ -63,7 +61,6 @@ const BannerStyles2 = {
 
 const ChrisPhoto = {
   backgroundImage: `url('${Chris.src}')`,
-  backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
   height: 'auto',
@@ -75,13 +72,13 @@ const ChrisPhoto = {
 
 const LessonPhoto = {
   backgroundImage: `url('${Lesson.src}')`,
-  backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
   height: 'auto',
-  backgroundSize: 'cover',
+  backgroundSize: 'contain',
   backgroundRepeat: 'no-repeat',
   postion: 'relative',
+  width: '100%',
 };
 
 function Copyright() {
