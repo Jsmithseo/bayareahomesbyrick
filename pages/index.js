@@ -35,7 +35,6 @@ const ROLES = [
   'Peacock Gap Golf Club: 70',
   'The Links at Bodega Harbour: 70',
   'Bluerock Springs: 70',
-
 ];
 
 const BannerStyles = {
@@ -43,9 +42,11 @@ const BannerStyles = {
   backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
-  height: '600px',
+  height: 'auto',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  postion: 'relative',
+  width: '100%',
 };
 
 const BannerStyles2 = {
@@ -53,9 +54,11 @@ const BannerStyles2 = {
   backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
-  height: '40%',
+  height: 'auto',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  postion: 'relative',
+  width: '100%',
 };
 
 const ChrisPhoto = {
@@ -63,9 +66,11 @@ const ChrisPhoto = {
   backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
-  height: '100%',
+  height: 'auto',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  postion: 'relative',
+  width: '100%',
 };
 
 const LessonPhoto = {
@@ -73,9 +78,10 @@ const LessonPhoto = {
   backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
-  height: '100%',
+  height: 'auto',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  postion: 'relative',
 };
 
 function Copyright() {
@@ -120,7 +126,7 @@ export default function Album() {
                 <b>Chris Curnett</b> Golf
               </Typography>
             </Grid>
-            <Grid xs={12} md={6} >
+            <Grid xs={12} md={6}>
               <Typography
                 variant="h4"
                 color="black"
@@ -143,24 +149,32 @@ export default function Album() {
           }}
           style={BannerStyles}
         >
-          <div style={{paddingTop: "200px"}}>
-          <Typed
-          style={{ fontSize: "50px", backgroundColor: "#353535"}}
-            loop
-            strings={ROLES}
-            typeSpeed={50}
-            backSpeed={80}
-            backDelay={3000}
-            loopCout={0}
-            showCursor
-            className="self-typed"
-            cursorChar="|"
-          ></Typed>{' '}
+          <div style={{ paddingTop: '200px' }}>
+            <Typed
+              style={{ fontSize: '50px', backgroundColor: '#353535' }}
+              loop
+              strings={ROLES}
+              typeSpeed={50}
+              backSpeed={80}
+              backDelay={3000}
+              loopCout={0}
+              showCursor
+              className="self-typed"
+              cursorChar="|"
+            ></Typed>{' '}
           </div>
-    
         </Box>
         {/* End hero unit */}
+
         <Container component="main" sx={{ mt: 2, mb: 4 }} maxWidth="lg">
+          <Typography
+            variant="h4"
+            color="black"
+            component="div"
+            sx={{ flexGrow: 1 }}
+          >
+            About Chris
+          </Typography>
           <Grid container spacing={2}>
             <Grid item md={4} lg={4} sm={12} xs={12}>
               <Card sx={{ maxWidth: 345 }} style={ChrisPhoto}>
@@ -195,16 +209,25 @@ export default function Album() {
               </item>
             </Grid>
           </Grid>
-
-          <Grid container spacing={2} sx={{ mt: 10, mb: 4 }}>
-          <Grid item lg={4} md={4} sm={12} xs={12}>
+          <Container>
+            <Typography
+              variant="h4"
+              color="black"
+              component="div"
+              sx={{ flexGrow: 1 }}
+            >
+              Lessons
+            </Typography>
+          </Container>
+          <Grid container spacing={2} sx={{ mt: 1, mb: 4 }}>
+            <Grid item lg={4} md={4} sm={12} xs={12}>
               <item>
                 <Card sx={{ maxWidth: 345 }} style={LessonPhoto}>
                   <CardMedia sx={{ height: 300 }} />
                 </Card>
               </item>
             </Grid>
-            <Grid item  lg={8} md={8} sm={12} xs={12}>
+            <Grid item lg={8} md={8} sm={12} xs={12}>
               <item>
                 <Typography variant="h6" component="h6" gutterBottom>
                   Chris Curnutt's teaching style is characterized by a deep
@@ -220,7 +243,6 @@ export default function Album() {
                 </Typography>
               </item>
             </Grid>
-
           </Grid>
         </Container>
 
@@ -286,17 +308,33 @@ export default function Album() {
         ></Box>
         <Toolbar>
           <Grid container>
-            <Grid item lg="8" md="8"  sm="12" xs="12">
-              <item style={{fontFamily: "source-sans-pro", fontWeight: "700", fontStyle: "normal", fontSize: "40px"}}>Contact:
+            <Grid item lg="8" md="8" sm="12" xs="12">
+              <item
+                style={{
+                  fontFamily: 'source-sans-pro',
+                  fontWeight: '700',
+                  fontStyle: 'normal',
+                  fontSize: '40px',
+                }}
+              >
+                Contact:
               </item>
-              
             </Grid>
-            <Grid item lg="4" md="8"  sm="12" xs="12">
+            <Grid item lg="4" md="8" sm="12" xs="12">
               <item>
-                <Typography style={{fontFamily: "source-sans-pro", fontWeight: "700", fontStyle: "normal", fontSize: "20px", paddingTop: "20px", paddingBottom: "20px" }}>714 Contra Costa Blvd.
-                Pleasant Hill, CA 94523
-                Email: chris.curnutt59@gmail.com
-               <br/> Instagram: @chriscurnuttgolf
+                <Typography
+                  style={{
+                    fontFamily: 'source-sans-pro',
+                    fontWeight: '700',
+                    fontStyle: 'normal',
+                    fontSize: '20px',
+                    paddingTop: '20px',
+                    paddingBottom: '20px',
+                  }}
+                >
+                  714 Contra Costa Blvd. Pleasant Hill, CA 94523 Email:
+                  chris.curnutt59@gmail.com
+                  <br /> Instagram: @chriscurnuttgolf
                 </Typography>
               </item>
             </Grid>
