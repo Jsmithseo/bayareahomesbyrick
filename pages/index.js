@@ -162,12 +162,12 @@ export default function Album() {
         {/* End hero unit */}
         <Container component="main" sx={{ mt: 2, mb: 4 }} maxWidth="lg">
           <Grid container spacing={2}>
-            <Grid item xs={4}>
+            <Grid item md={4} lg={4} sm={12} xs={12}>
               <Card sx={{ maxWidth: 345 }} style={ChrisPhoto}>
                 <CardMedia sx={{ height: 300 }} />
               </Card>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} md={8} lg={8}>
               <item>
                 {/* <Typography variant="h2" component="h1" gutterBottom>
               About Chris Curnett
@@ -197,7 +197,14 @@ export default function Album() {
           </Grid>
 
           <Grid container spacing={2} sx={{ mt: 10, mb: 4 }}>
-            <Grid item xs={8}>
+          <Grid item lg={4} md={4} sm={12} xs={12}>
+              <item>
+                <Card sx={{ maxWidth: 345 }} style={LessonPhoto}>
+                  <CardMedia sx={{ height: 300 }} />
+                </Card>
+              </item>
+            </Grid>
+            <Grid item  lg={8} md={8} sm={12} xs={12}>
               <item>
                 <Typography variant="h6" component="h6" gutterBottom>
                   Chris Curnutt's teaching style is characterized by a deep
@@ -213,20 +220,14 @@ export default function Album() {
                 </Typography>
               </item>
             </Grid>
-            <Grid item xs={4}>
-              <item>
-                <Card sx={{ maxWidth: 345 }} style={LessonPhoto}>
-                  <CardMedia sx={{ height: 300 }} />
-                </Card>
-              </item>
-            </Grid>
+
           </Grid>
         </Container>
 
         <Toolbar style={{ backgroundColor: '#353535' }}>
           <Container>
             <Grid container spacing={2} sx={{ mt: 2, mb: 4 }}>
-              <Grid item xs={3}>
+              <Grid item lg={3} md={3} sm={6} xs={6}>
                 <item>
                   <Typography variant="h5" gutterBottom color="#fff">
                     3256 <br />
@@ -234,7 +235,7 @@ export default function Album() {
                   </Typography>
                 </item>
               </Grid>
-              <Grid item xs={3}>
+              <Grid item lg={3} md={3} sm={6} xs={6}>
                 <item>
                   <Typography
                     variant="h5"
@@ -247,7 +248,7 @@ export default function Album() {
                   </Typography>
                 </item>
               </Grid>
-              <Grid item xs={3}>
+              <Grid item lg={3} md={3} sm={6} xs={6}>
                 <item>
                   <Typography
                     variant="h5"
@@ -260,7 +261,7 @@ export default function Album() {
                   </Typography>
                 </item>
               </Grid>
-              <Grid item xs={3}>
+              <Grid item lg={3} md={3} sm={6} xs={6}>
                 <item>
                   <Typography
                     variant="h5"
@@ -285,18 +286,18 @@ export default function Album() {
         ></Box>
         <Toolbar>
           <Grid container>
-            <Grid item xs="8">
-              <item style={{fontFamily: "source-sans-pro", fontWeight: "700", fontStyle: "normal"}}>Contact</item>
+            <Grid item lg="8" md="8"  sm="12" xs="12">
+              <item style={{fontFamily: "source-sans-pro", fontWeight: "700", fontStyle: "normal", fontSize: "40px"}}>Contact:
+              </item>
+              
             </Grid>
-            <Grid item xs="2">
+            <Grid item lg="4" md="8"  sm="12" xs="12">
               <item>
-                <Typography>714 Contra Costa Blvd.</Typography>
-                <br />
-                <Typography>Pleasant Hill, CA 94523</Typography>
-                <br />
-                <Typography>Email: chris.curnutt59@gmail.com</Typography>
-                <br />
-                <Typography>Instagram: @chriscurnuttgolf</Typography>
+                <Typography style={{fontFamily: "source-sans-pro", fontWeight: "700", fontStyle: "normal", fontSize: "20px", paddingTop: "20px", paddingBottom: "20px" }}>714 Contra Costa Blvd.
+                Pleasant Hill, CA 94523
+                Email: chris.curnutt59@gmail.com
+               <br/> Instagram: @chriscurnuttgolf
+                </Typography>
               </item>
             </Grid>
           </Grid>
