@@ -18,17 +18,32 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import bannerImage from '../public/bannerImage.jpeg';
 import bannerImage2 from '../public/bannerImage2.jpeg';
-
 import Chris from '../public/image6.jpeg';
 import Lesson from '../public/lesson.jpeg';
 import Image from 'next/image';
+import Typed from 'react-typed';
+
+const ROLES = [
+  'Bluerock Springs: 70',
+  'HiddenBrooke: 70',
+  'Eagle Vine: 70',
+  'TPC Harding Park: 70',
+  'Presidio Golf Course: 70',
+  'Corica Park Golf Course: 70',
+  'Cinnabar Hills Golf Club: 70',
+  'Baylands Golf Links: 70',
+  'Peacock Gap Golf Club: 70',
+  'The Links at Bodega Harbour: 70',
+  'Bluerock Springs: 70',
+
+];
 
 const BannerStyles = {
   backgroundImage: `url('${bannerImage.src}')`,
   backgroundColor: 'rgba(255, 0, 0, 0.3)',
   color: '#fff',
   textAlign: 'center',
-  height: '40%',
+  height: '600px',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
 };
@@ -95,7 +110,7 @@ export default function Album() {
       >
         <Toolbar>
           <Grid container spacing={2}>
-            <Grid xs={6} md={8}>
+            <Grid xs={12} md={6}>
               <Typography
                 variant="h4"
                 color="black"
@@ -105,14 +120,14 @@ export default function Album() {
                 <b>Chris Curnett</b> Golf
               </Typography>
             </Grid>
-            <Grid xs={6} md={4}>
+            <Grid xs={12} md={6} >
               <Typography
                 variant="h4"
                 color="black"
                 component="div"
                 sx={{ flexGrow: 1 }}
               >
-                918 -373-4999
+                Book a Session: 918-373-4999
               </Typography>
             </Grid>
           </Grid>
@@ -127,7 +142,23 @@ export default function Album() {
             pb: 80,
           }}
           style={BannerStyles}
-        ></Box>
+        >
+          <div style={{paddingTop: "200px"}}>
+          <Typed
+          style={{ fontSize: "50px", backgroundColor: "#353535"}}
+            loop
+            strings={ROLES}
+            typeSpeed={50}
+            backSpeed={80}
+            backDelay={3000}
+            loopCout={0}
+            showCursor
+            className="self-typed"
+            cursorChar="|"
+          ></Typed>{' '}
+          </div>
+    
+        </Box>
         {/* End hero unit */}
         <Container component="main" sx={{ mt: 2, mb: 4 }} maxWidth="lg">
           <Grid container spacing={2}>
@@ -255,26 +286,17 @@ export default function Album() {
         <Toolbar>
           <Grid container>
             <Grid item xs="8">
-              <item>Contact</item>
+              <item style={{fontFamily: "source-sans-pro", fontWeight: "700", fontStyle: "normal"}}>Contact</item>
             </Grid>
             <Grid item xs="2">
               <item>
-                <Typography>
-                714 Contra Costa Blvd.
-                </Typography>
-                
+                <Typography>714 Contra Costa Blvd.</Typography>
                 <br />
-                <Typography>
-                Pleasant Hill, CA 94523
-                </Typography>
+                <Typography>Pleasant Hill, CA 94523</Typography>
                 <br />
-                <Typography>
-                Email: chris.curnutt59@gmail.com
-                </Typography>
+                <Typography>Email: chris.curnutt59@gmail.com</Typography>
                 <br />
-                <Typography>
-                Instagram: @chriscurnuttgolf
-                </Typography>
+                <Typography>Instagram: @chriscurnuttgolf</Typography>
               </item>
             </Grid>
           </Grid>
