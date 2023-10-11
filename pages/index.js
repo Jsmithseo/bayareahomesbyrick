@@ -22,6 +22,9 @@ import Chris from '../public/image6.jpeg';
 import Lesson from '../public/lesson.jpeg';
 import Image from 'next/image';
 import Typed from 'react-typed';
+import CallEndIcon from '@mui/icons-material/CallEnd';
+
+
 
 const ROLES = [
   'Bluerock Springs: 70',
@@ -98,7 +101,7 @@ function Copyright() {
   );
 }
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
@@ -110,30 +113,30 @@ export default function Album() {
       <AppBar
         position="relative"
         style={{
-          backgroundColor: 'white',
+          backgroundColor: '#eb4034',
           paddingTop: '20px',
           paddingBottom: '20px',
         }}
       >
         <Toolbar>
-          <Grid container spacing={2}>
-            <Grid xs={12} md={6}>
+          <Grid container spacing={0}>
+            <Grid xs={12} md={8}>
               <Typography
-                variant="h4"
+                variant="h5"
                 color="black"
-                component="div"
-                sx={{ flexShrink: 1 }}
+                fontFamily="avenir"
               >
                 <b>Chris Curnett</b> Golf
               </Typography>
             </Grid>
-            <Grid xs={12} md={6}>
+            <Grid xs={12} md={4}>
+
               <Typography
-                variant="h4"
+                variant="h5"
                 color="black"
-                component="div"
-                sx={{ flexGrow: 1 }}
+                fontFamily="avenir"
               >
+                
                 Book a Session: 918-373-4999
               </Typography>
             </Grid>
@@ -173,6 +176,8 @@ export default function Album() {
             color="black"
             component="div"
             sx={{ flexGrow: 1 }}
+            fontFamily="avenir"
+
           >
             About Chris
           </Typography>
@@ -187,7 +192,9 @@ export default function Album() {
                 {/* <Typography variant="h2" component="h1" gutterBottom>
               About Chris Curnett
             </Typography> */}
-                <Typography variant="h6" component="h6" gutterBottom>
+                <Typography variant="h6" component="h6" gutterBottom
+                fontFamily="avenir"
+                >
                   Chris Curnutt is originally from Oklahoma and began his golf
                   journey at 5 years old in a suburb of Tulsa. He grew up
                   playing multiple sports, including soccer and baseball, but
@@ -211,14 +218,6 @@ export default function Album() {
             </Grid>
           </Grid>
           <Container>
-            <Typography
-              variant="h4"
-              color="black"
-              component="div"
-              sx={{ flexGrow: 1 }}
-            >
-              Lessons
-            </Typography>
           </Container>
           <Grid container spacing={2} sx={{ mt: 1, mb: 4 }}>
             <Grid item lg={4} md={4} sm={12} xs={12}>
@@ -230,7 +229,9 @@ export default function Album() {
             </Grid>
             <Grid item lg={8} md={8} sm={12} xs={12}>
               <item>
-                <Typography variant="h6" component="h6" gutterBottom>
+                <Typography variant="h6" component="h6" gutterBottom
+                  fontFamily="avenir"
+                >
                   Chris Curnutt's teaching style is characterized by a deep
                   passion for golf and a commitment to holistic development.
                   Drawing from a wealth of experience, he focuses on cultivating
@@ -252,7 +253,9 @@ export default function Album() {
             <Grid container spacing={2} sx={{ mt: 2, mb: 4 }}>
               <Grid item lg={3} md={3} sm={6} xs={6}>
                 <item>
-                  <Typography variant="h5" gutterBottom color="#fff">
+                  <Typography variant="h5" gutterBottom color="#fff" 
+                    fontFamily="avenir"
+                  >
                     3256 <br />
                     lessons since 2020
                   </Typography>
@@ -265,6 +268,7 @@ export default function Album() {
                     component="h6"
                     gutterBottom
                     color="#fff"
+                    fontFamily="avenir"
                   >
                     8K+ <br />
                     lessons career
@@ -278,6 +282,7 @@ export default function Album() {
                     component="h6"
                     gutterBottom
                     color="#fff"
+                    fontFamily="avenir"
                   >
                     650+ <br />
                     golfers helped
@@ -291,6 +296,7 @@ export default function Album() {
                     component="h6"
                     gutterBottom
                     color="#fff"
+                    fontFamily="avenir"
                   >
                     95% <br />
                     goals reached
@@ -316,6 +322,7 @@ export default function Album() {
                   fontWeight: '700',
                   fontStyle: 'normal',
                   fontSize: '40px',
+                  fontFamily:'avenir'
                 }}
               >
                 Contact:
@@ -331,6 +338,7 @@ export default function Album() {
                     fontSize: '20px',
                     paddingTop: '20px',
                     paddingBottom: '20px',
+                    fontFamily:'avenir'
                   }}
                 >
                   714 Contra Costa Blvd. Pleasant Hill, CA 94523 Email:
