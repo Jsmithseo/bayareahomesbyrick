@@ -46,7 +46,7 @@ const BannerStyles = {
   color: '#fff',
   textAlign: 'center',
   height: 'auto',
-  backgroundSize: "100%",
+  backgroundSize: "cover",
   backgroundRepeat: 'no-repeat',
   postion: 'relative',
   width: '100%',
