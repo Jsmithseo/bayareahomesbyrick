@@ -46,10 +46,11 @@ const BannerStyles = {
   color: '#fff',
   textAlign: 'center',
   height: 'auto',
-  backgroundSize: 'cover',
+  backgroundSize: "100%",
   backgroundRepeat: 'no-repeat',
   postion: 'relative',
   width: '100%',
+  height:'100vh',
 };
 
 const BannerStyles2 = {
@@ -149,11 +150,11 @@ export default function Album() {
           sx={{
             bgcolor: 'background.paper',
             pt: 1,
-            pb: 80,
+            pb: 70,
           }}
           style={BannerStyles}
         >
-          <div style={{ paddingTop: '200px' }}>
+          {/* <div style={{ paddingTop: '200px' }}>
             <Typed
               style={{ fontSize: '3rem', backgroundColor: '#353535' }}
               loop
@@ -166,7 +167,7 @@ export default function Album() {
               className="self-typed"
               cursorChar="|"
             ></Typed>{' '}
-          </div>
+          </div> */}
         </Box>
         {/* End hero unit */}
 
@@ -306,13 +307,7 @@ export default function Album() {
             </Grid>
           </Container>
         </Toolbar>
-        <Box
-          sx={{
-            bgcolor: 'background.paper',
-            pb: 70,
-          }}
-          style={BannerStyles2}
-        ></Box>
+
         <Toolbar>
           <Grid container>
             <Grid item lg="8" md="8" sm="12" xs="12">
