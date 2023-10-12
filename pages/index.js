@@ -138,7 +138,7 @@ export default function Album() {
                 fontFamily="avenir"
               >
                 
-                Book a Session: 918-373-4999
+                Book A Session: 918-373-4999
               </Typography>
             </Grid>
           </Grid>
