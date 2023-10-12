@@ -214,8 +214,6 @@ export default function Album() {
                   career in restaurant management. 10 years later, Chris and his
                   girlfriend Samantha moved to Northern California and the
                   decision was made that he would return to teaching full time.
-                  Chris is currently an instructor at Blue Rock Springs GC in
-                  Vallejo, CA
                 </Typography>
               </item>
             </Grid>
