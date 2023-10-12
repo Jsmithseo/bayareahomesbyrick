@@ -26,6 +26,7 @@ import CallEndIcon from '@mui/icons-material/CallEnd';
 
 
 
+
 const ROLES = [
   'Bluerock Springs: 70',
   'HiddenBrooke: 70',
@@ -360,9 +361,9 @@ export default function Album() {
                     fontWeight: "bold"
                   }}
                 >
-                  714 Contra Costa Blvd. Pleasant Hill, CA 94523
-                  chris.curnutt59@gmail.com
-                  <br /> @chriscurnuttgolf
+                  714 Contra Costa Blvd. Pleasant Hill, CA 94523<br/>
+                Email:  <Link href="mailto:chris.curnutt59@gmail.com">chris.curnutt59@gmail.com</Link>
+                 <br /> @chriscurnuttgolf
                 </Typography>
               </item>
             </Grid>
