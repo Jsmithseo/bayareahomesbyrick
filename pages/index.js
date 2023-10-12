@@ -150,13 +150,13 @@ export default function Album() {
           sx={{
             bgcolor: 'background.paper',
             pt: 1,
-            pb: 70,
+            pb: 10,
           }}
           style={BannerStyles}
         >
-          {/* <div style={{ paddingTop: '200px' }}>
+          <div style={{ paddingTop: '200px' }}>
             <Typed
-              style={{ fontSize: '3rem', backgroundColor: '#353535' }}
+              style={{ fontSize: '2rem', backgroundColor: '#353535' }}
               loop
               strings={ROLES}
               typeSpeed={50}
@@ -167,7 +167,7 @@ export default function Album() {
               className="self-typed"
               cursorChar="|"
             ></Typed>{' '}
-          </div> */}
+          </div> 
         </Box>
         {/* End hero unit */}
 
@@ -307,7 +307,13 @@ export default function Album() {
             </Grid>
           </Container>
         </Toolbar>
-
+        <Box
+          sx={{
+            bgcolor: 'background.paper',
+            pb: 70,
+          }}
+          style={BannerStyles2}
+        ></Box>
         <Toolbar>
           <Grid container>
             <Grid item lg="8" md="8" sm="12" xs="12">
