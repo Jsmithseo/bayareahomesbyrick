@@ -178,6 +178,7 @@ export default function Album() {
             component="div"
             fontFamily="avenir"
             sx={{ mt: 5, mb: 5}}
+            fontWeight="bold"
 
           >
             About Chris
@@ -223,10 +224,12 @@ export default function Album() {
           </Container>
           <Typography
             variant="h3"
-            color="black"
             component="div"
             fontFamily="avenir"
             sx={{ mt: 5, mb: 1}}
+            color="black"
+            fontWeight="bold"
+            
 
           >
             Coaching
@@ -350,13 +353,13 @@ export default function Album() {
                 <Typography
                   style={{
                     fontFamily: 'source-sans-pro',
-                    fontWeight: '700',
                     fontStyle: 'normal',
                     fontSize: '100%',
                     paddingTop: '20px',
                     paddingBottom: '20px',
                     fontFamily:'avenir',
-                    color: '#fff'
+                    color: '#fff',
+                    fontWeight: "bold"
                   }}
                 >
                   714 Contra Costa Blvd. Pleasant Hill, CA 94523
