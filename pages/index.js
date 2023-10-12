@@ -173,15 +173,16 @@ export default function Album() {
 
         <Container component="main" sx={{ mt: 2, mb: 4 }} maxWidth="lg">
           <Typography
-            variant="h4"
+            variant="h3"
             color="black"
             component="div"
-            sx={{ flexGrow: 1 }}
             fontFamily="avenir"
+            sx={{ mt: 5, mb: 5}}
 
           >
             About Chris
           </Typography>
+  
           <Grid container spacing={2}>
             <Grid item md={4} lg={4} sm={12} xs={12}>
               <Card sx={{ maxWidth: 345 }} style={ChrisPhoto}>
@@ -255,7 +256,7 @@ export default function Album() {
               <Grid item lg={3} md={3} sm={6} xs={6}>
                 <item>
                   <Typography variant="h5" gutterBottom color="#fff" 
-                    fontFamily="avenir"
+                    fontFamily="avenir" fontWeight={700}
                   >
                     3256 <br />
                     lessons since 2020
@@ -270,6 +271,7 @@ export default function Album() {
                     gutterBottom
                     color="#fff"
                     fontFamily="avenir"
+                    fontWeight={700}
                   >
                     8K+ <br />
                     lessons career
@@ -284,6 +286,7 @@ export default function Album() {
                     gutterBottom
                     color="#fff"
                     fontFamily="avenir"
+                    fontWeight={700}
                   >
                     650+ <br />
                     golfers helped
@@ -298,6 +301,7 @@ export default function Album() {
                     gutterBottom
                     color="#fff"
                     fontFamily="avenir"
+                    fontWeight={700}
                   >
                     95% <br />
                     goals reached
@@ -314,7 +318,7 @@ export default function Album() {
           }}
           style={BannerStyles2}
         ></Box>
-        <Toolbar>
+        <Toolbar style={{backgroundColor:'#116A6C'}}>
           <Grid container>
             <Grid item lg="8" md="8" sm="12" xs="12">
               <item
@@ -323,7 +327,9 @@ export default function Album() {
                   fontWeight: '700',
                   fontStyle: 'normal',
                   fontSize: '40px',
-                  fontFamily:'avenir'
+                  fontFamily:'avenir',
+                  color: '#fff'
+                  
                 }}
               >
                 Contact:
@@ -339,7 +345,8 @@ export default function Album() {
                     fontSize: '100%',
                     paddingTop: '20px',
                     paddingBottom: '20px',
-                    fontFamily:'avenir'
+                    fontFamily:'avenir',
+                    color: '#fff'
                   }}
                 >
                   714 Contra Costa Blvd. Pleasant Hill, CA 94523
