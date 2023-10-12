@@ -221,6 +221,16 @@ export default function Album() {
           </Grid>
           <Container>
           </Container>
+          <Typography
+            variant="h3"
+            color="black"
+            component="div"
+            fontFamily="avenir"
+            sx={{ mt: 5, mb: 1}}
+
+          >
+            Coaching
+          </Typography>
           <Grid container spacing={2} sx={{ mt: 1, mb: 4 }}>
             <Grid item lg={4} md={4} sm={12} xs={12}>
               <item>
