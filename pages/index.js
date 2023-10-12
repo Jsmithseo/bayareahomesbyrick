@@ -336,15 +336,15 @@ export default function Album() {
                     fontFamily: 'source-sans-pro',
                     fontWeight: '700',
                     fontStyle: 'normal',
-                    fontSize: '20px',
+                    fontSize: '100%',
                     paddingTop: '20px',
                     paddingBottom: '20px',
                     fontFamily:'avenir'
                   }}
                 >
-                  714 Contra Costa Blvd. Pleasant Hill, CA 94523 Email:
+                  714 Contra Costa Blvd. Pleasant Hill, CA 94523
                   chris.curnutt59@gmail.com
-                  <br /> Instagram: @chriscurnuttgolf
+                  <br /> @chriscurnuttgolf
                 </Typography>
               </item>
             </Grid>
