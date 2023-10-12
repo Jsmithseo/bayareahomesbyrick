@@ -137,6 +137,7 @@ export default function Album() {
                 variant="h5"
                 color="black"
                 fontFamily="avenir"
+                fontWeight="bold"
               >
                 
                 Book A Session: 918-373-4999
