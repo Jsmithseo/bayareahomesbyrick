@@ -21,25 +21,7 @@ import bannerImage2 from '../public/bannerImage2.jpeg';
 import Chris from '../public/image6.jpeg';
 import Lesson from '../public/lesson.jpeg';
 import Image from 'next/image';
-import Typed from 'react-typed';
-import CallEndIcon from '@mui/icons-material/CallEnd';
-
-
-
-
-const ROLES = [
-  'Bluerock Springs: 70',
-  'HiddenBrooke: 70',
-  'Eagle Vine: 70',
-  'TPC Harding Park: 70',
-  'Presidio Golf Course: 70',
-  'Corica Park Golf Course: 70',
-  'Cinnabar Hills Golf Club: 70',
-  'Baylands Golf Links: 70',
-  'Peacock Gap Golf Club: 70',
-  'The Links at Bodega Harbour: 70',
-  'Bluerock Springs: 70',
-];
+import LessonForm from "./components/LessonForm"
 
 const BannerStyles = {
   backgroundImage: `url('${bannerImage.src}')`,
@@ -156,20 +138,6 @@ export default function Album() {
           }}
           style={BannerStyles}
         >
-          <div style={{ paddingTop: '200px' }}>
-            <Typed
-              style={{ fontSize: '2rem', backgroundColor: '#353535' }}
-              loop
-              strings={ROLES}
-              typeSpeed={50}
-              backSpeed={80}
-              backDelay={3000}
-              loopCout={0}
-              showCursor
-              className="self-typed"
-              cursorChar="|"
-            ></Typed>{' '}
-          </div> 
         </Box>
         {/* End hero unit */}
 
@@ -324,13 +292,47 @@ export default function Album() {
             </Grid>
           </Container>
         </Toolbar>
-        <Box
+        <br></br>
+        <br></br>
+        <center>
+        <Typography
+            component="div"
+            variant="h2"
+            fontFamily="avenir"
+            sx={{ mt: 2, mb: 2}}
+            color="black"
+            fontWeight="bold"
+            
+
+          >
+            Lesson Inquiry
+          </Typography>
+          
+        <Typography
+            component="div"
+            fontFamily="avenir"
+            sx={{ mt: 2, mb: 2}}
+            fontSize="20px"
+            color="black"
+            fontWeight="bold"
+            
+
+          >
+            I'm excited to help you begin your lessons and customize a plan that suits your specific needs and goals
+          </Typography>
+        </center>
+   
+
+        <LessonForm/>
+        <br></br>
+        <br></br>
+        {/* <Box
           sx={{
             bgcolor: 'background.paper',
             pb: 70,
           }}
           style={BannerStyles2}
-        ></Box>
+        ></Box> */}
         <Toolbar style={{backgroundColor:'#116A6C'}}>
           <Grid container>
             <Grid item lg="8" md="8" sm="12" xs="12">
