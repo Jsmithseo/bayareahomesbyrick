@@ -1,6 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js"
-}
+{"/Lessons":"pages/Lessons.html","/_error":"pages/_error.js","/_app":"pages/_app.js","/components/layouts/BaseLayouts":"pages/components/layouts/BaseLayouts.html","/api/sendMail":"pages/api/sendMail.js","/":"pages/index.html","/_document":"pages/_document.js","/components/shared/Header":"pages/components/shared/Header.html","/404":"pages/404.html"}
