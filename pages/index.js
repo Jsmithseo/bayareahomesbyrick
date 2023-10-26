@@ -132,16 +132,16 @@ export default function Index() {
       <div className="ratings">
         <Container>
           <Row>
-            <Col sm="3">
+            <Col lg="3" md="3" sm="12" xs="12">
               <h3 className="stat">3,256 lessons since 2020</h3>
             </Col>
-            <Col sm="3">
+            <Col lg="3" md="3" sm="12" xs="12">
               <h3 className="stat">8K+ lessons career</h3>
             </Col>
-            <Col sm="3">
+            <Col lg="3" md="3" sm="12" xs="12">
               <h3 className="stat">650+ golfers helped</h3>
             </Col>
-            <Col sm="3">
+            <Col lg="3" md="3" sm="12" xs="12">
               <h3 className="stat">95% goals reached</h3>
             </Col>
           </Row>
