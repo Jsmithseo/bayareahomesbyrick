@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 
-
 const MainStyle = {
   overflowX: 'hidden',
 };
@@ -21,9 +20,7 @@ export default function Lessons() {
           <Col md="12">
             <center></center>
             <div className="bio-content">
-              <div style={copyStyle}>
-here
-              </div>
+              <div style={copyStyle}>here</div>
             </div>
           </Col>
         </Row>
