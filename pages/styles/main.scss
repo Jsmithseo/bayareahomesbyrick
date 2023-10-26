@@ -211,7 +211,7 @@ body {
   color: #0000ee;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .hero-welcome-wrapper.d-flex.justify-content-end {
     display: none !important;
   }
@@ -221,6 +221,15 @@ body {
 
   .callout {
     font-size: 4rem;
+  }
+
+
+  .jumbtron {
+    background-image: url('../../public/bannersmall.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
   }
 }
 
