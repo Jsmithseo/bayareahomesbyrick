@@ -99,6 +99,18 @@
   }
 }
 
+.clientName {
+  font-family: avenir;
+  font-size: 30px;
+  color: #fff;
+}
+
+.name {
+  color: #fff;
+  font-weight: 800;
+  font-family: avenir;
+}
+
 @media (max-width: 768px) {
   .port-navbar.port-default .port-navbar-link {
     color: #000;
