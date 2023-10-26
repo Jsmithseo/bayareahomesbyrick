@@ -1,378 +1,171 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import bannerImage from '../public/bannerImage.jpeg';
-import bannerImage2 from '../public/bannerImage2.jpeg';
-import Chris from '../public/image6.jpeg';
-import Lesson from '../public/lesson.jpeg';
+import React from 'react';
 import Image from 'next/image';
-import LessonForm from "./components/LessonForm"
 
-const BannerStyles = {
-  backgroundImage: `url('${bannerImage.src}')`,
-  backgroundColor: 'rgba(255, 0, 0, 0.3)',
-  color: '#fff',
-  textAlign: 'center',
-  height: 'auto',
-  backgroundSize: "cover",
-  backgroundRepeat: 'no-repeat',
-  postion: 'relative',
-  width: '100%',
-  height:'100vh',
-};
+import { jsx } from '@emotion/react';
+import styled from '@emotion/styled';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+// import MaterialContactform from './components/MaterialContactform';
+import Link from 'next/link';
+import { Jumbotron, Container } from 'reactstrap';
 
-const BannerStyles2 = {
-  backgroundImage: `url('${bannerImage2.src}')`,
-  backgroundColor: 'rgba(255, 0, 0, 0.3)',
-  color: '#fff',
-  textAlign: 'center',
-  height: 'auto',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-  postion: 'relative',
-  width: '100%',
-};
+import { Row, Col, Button } from 'reactstrap';
+import BaseLayout from './components/layouts/BaseLayouts.js';
 
-const ChrisPhoto = {
-  backgroundImage: `url('${Chris.src}')`,
-  backgroundColor: 'rgba(255, 0, 0, 0.3)',
-  color: '#fff',
-  textAlign: 'center',
-  height: 'auto',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-  postion: 'relative',
-  width: '100%',
-};
+export default function Index() {
+  const MainStyle = {
+    overflowX: 'hidden',
+  };
 
-const LessonPhoto = {
-  backgroundImage: `url('${Lesson.src}')`,
-  backgroundColor: 'rgba(255, 0, 0, 0.3)',
-  color: '#fff',
-  textAlign: 'center',
-  height: 'auto',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-  postion: 'relative',
-  width: '100%',
-};
+  const companyTitle = {
+    textAlign: 'center',
+    fontFamily: 'avenir',
+  };
 
-function Copyright() {
+  const copy = {
+    textAlign: 'center',
+    fontSize: '30px',
+    fontFamily: 'avenir',
+  };
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
-
-
-// TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
-
-export default function Album() {
-  return (
-    <ThemeProvider theme={defaultTheme}>
-      <CssBaseline />
-      <AppBar
-        position="relative"
-        style={{
-          backgroundColor: '#eb4034',
-          paddingTop: '20px',
-          paddingBottom: '20px',
-        }}
-      >
-        <Toolbar>
-          <Grid container spacing={0}>
-            <Grid xs={12} md={8}>
-              <Typography
-                variant="h5"
-                color="black"
-                fontFamily="avenir"
-              >
-                <b>Chris Curnett</b> Golf
-              </Typography>
-            </Grid>
-            <Grid xs={12} md={4}>
-
-              <Typography
-                variant="h5"
-                color="black"
-                fontFamily="avenir"
-                fontWeight="bold"
-              >
-                
-                Book A Session: 918-373-4999
-              </Typography>
-            </Grid>
-          </Grid>
-        </Toolbar>
-      </AppBar>
-      <main>
-        {/* Hero unit */}
-        <Box
-          sx={{
-            bgcolor: 'background.paper',
-            pt: 1,
-            pb: 10,
-          }}
-          style={BannerStyles}
-        >
-        </Box>
-        {/* End hero unit */}
-
-        <Container component="main" sx={{ mt: 2, mb: 4 }} maxWidth="lg">
-          <Typography
-            variant="h3"
-            color="black"
-            component="div"
-            fontFamily="avenir"
-            sx={{ mt: 5, mb: 5}}
-            fontWeight="bold"
-
-          >
-            About Chris
-          </Typography>
-  
-          <Grid container spacing={2}>
-            <Grid item md={4} lg={4} sm={12} xs={12}>
-              <Card sx={{ maxWidth: 345 }} style={ChrisPhoto}>
-                <CardMedia sx={{ height: 300 }} />
-              </Card>
-            </Grid>
-            <Grid item xs={12} sm={12} md={8} lg={8}>
-              <item>
-                {/* <Typography variant="h2" component="h1" gutterBottom>
-              About Chris Curnett
-            </Typography> */}
-                <Typography variant="h6" component="h6" gutterBottom
-                fontFamily="avenir"
-                >
-                  Chris Curnutt is originally from Oklahoma and began his golf
-                  journey at 5 years old in a suburb of Tulsa. He grew up
-                  playing multiple sports, including soccer and baseball, but
-                  decided at the age of 15 to focus on golf. In high school,
-                  Chris was a member of his High School team which amassed over
-                  25 wins, including 3 consecutive Oklahoma State Championships.
-                  After attending the University of Arkansas with a major in
-                  Education, Chris began his career in golf at Shadow Valley CC
-                  in Bentonville, AR. Here, he was involved in the instruction
-                  program as well as day to day operations. He continued his
-                  career at Emerald Falls GC in Broken Arrow, OK, as an
-                  Assistant Professional. After moving to the Oklahoma City
-                  area, Chris instructed on a part time basis while pursuing a
-                  career in restaurant management. 10 years later, Chris and his
-                  girlfriend Samantha moved to Northern California and the
-                  decision was made that he would return to teaching full time.
-                </Typography>
-              </item>
-            </Grid>
-          </Grid>
-          <Container>
-          </Container>
-          <Typography
-            variant="h3"
-            component="div"
-            fontFamily="avenir"
-            sx={{ mt: 5, mb: 1}}
-            color="black"
-            fontWeight="bold"
-            
-
-          >
-            Coaching
-          </Typography>
-          <Grid container spacing={2} sx={{ mt: 1, mb: 4 }}>
-            <Grid item lg={4} md={4} sm={12} xs={12}>
-              <item>
-                <Card sx={{ maxWidth: 345 }} style={LessonPhoto}>
-                  <CardMedia sx={{ height: 300 }} />
-                </Card>
-              </item>
-            </Grid>
-            <Grid item lg={8} md={8} sm={12} xs={12}>
-              <item>
-                <Typography variant="h6" component="h6" gutterBottom
-                  fontFamily="avenir"
-                >
-                  Chris Curnutt's teaching style is characterized by a deep
-                  passion for golf and a commitment to holistic development.
-                  Drawing from a wealth of experience, he focuses on cultivating
-                  a strong foundation in his students, emphasizing not only
-                  technical skills but also core values. As an instructor, Chris
-                  leverages a diverse set of tools and techniques to enhance
-                  learning. He utilizes Operation 36, V1 video analysis, and
-                  Hackmotion technology to provide structured and goal-oriented
-                  lessons. This combination of tools allows him to offer precise
-                  feedback and tailored guidance to his students.
-                </Typography>
-              </item>
-            </Grid>
-          </Grid>
+    <BaseLayout>
+      <div className="jumbtron">
+        <div className="container">
+          <h1 className="display-3">Paving the Way to Golf Excellence</h1>
+        </div>
+      </div>
+      <Container>
+        <Row className="aboutSection">
+          <Col sm="6">
+            <img
+              src="/image6.jpeg" // Replace with your image path
+              alt="Image"
+              className="img-fluid"
+            />
+          </Col>
+          <Col sm="6">
+            <h2 className="aboutTitle">About Me</h2>
+            <p>
+              Chris Curnutt is originally from Oklahoma and began his golf
+              journey at 5 years old in a suburb of Tulsa. He grew up playing
+              multiple sports, including soccer and baseball, but decided at the
+              age of 15 to focus on golf. In high school, Chris was a member of
+              his High School team which amassed over 25 wins, including 3
+              consecutive Oklahoma State Championships. After attending the
+              University of Arkansas with a major in Education, Chris began his
+              career in golf at Shadow Valley CC in Bentonville, AR. Here, he
+              was involved in the instruction program as well as day to day
+              operations. He continued his career at Emerald Falls GC in Broken
+              Arrow, OK, as an Assistant Professional. After moving to the
+              Oklahoma City area, Chris instructed on a part time basis while
+              pursuing a career in restaurant management. 10 years later, Chris
+              and his girlfriend Samantha moved to Northern California and the
+              decision was made that he would return to teaching full time.
+            </p>
+          </Col>
+        </Row>
+        <br></br>
+        <Row className="lessonSection">
+          <Col sm="6">
+            <img
+              src="/lesson.jpeg" // Replace with your image path
+              alt="Image"
+              className="img-fluid"
+            />
+          </Col>
+          <Col sm="6">
+            <h2 className="lessonTitle">LESSONS</h2>
+            <p>
+              My goal is to not just show you what to do or how to hit a ball,
+              but also educate you on the game so you enjoy playing golf
+              everytime you are on the course.
+            </p>
+            <h3>CREATING THE ROADMAP</h3>
+            <p>
+              All lessons start with a 60 minute swing assessment ($150). Swing
+              assessments are included in lesson packages of 10 and more. This
+              first step will help both you and I create your personalized
+              lesson program. During the assessment, we will discuss your golf
+              goals, diagnose both ball flight and golf swing, and structure the
+              lesson plan for each visit.{' '}
+            </p>
+            <h3>SERVICES AND PACKAGES</h3>
+            <p>
+              The services and packages offered are designed to help you reach
+              your potential to play your best golf based on what you are
+              looking to achieve. Lessons start at $210, with various packages
+              available depending on your goals. Each lesson is 60 minutes and
+              for junior golfers (under 17) there is a 30% discount on full
+              packages.{' '}
+            </p>
+            <h3>LET'S GET SOMETHING ON THE BOOKS</h3>
+            <p>
+              Please click on the button below and we can begin the process to
+              schedule you lessons. Once your lessons have been confirmed, you
+              will receive a pre-assessment form to fill out. This will prepare
+              us for the swing assessment and help guide your lesson program. If
+              you have any additional questions, please email me at{' '}
+            </p>
+            <Button color="primary">Book a Lesson</Button>
+          </Col>
+        </Row>
+        {/* <Row className="studentSection">
+          <Col sm="6">
+            <img
+            src="/lesson.jpeg" // Replace with your image path
+            alt="Image"
+            className="img-fluid"
+          />
+          </Col>
+          <Col sm="6">
+            <h3 className="studentTitle">Students</h3>
+          </Col>
+        </Row> */}
+        <Row className="statSection">
+          <div className="jumbtron putting">
+            <div className="container">
+              <h1 className="display-3"></h1>
+            </div>
+          </div>
+        </Row>
+      </Container>
+      <div className="ratings">
+        <Container>
+          <Row>
+            <Col sm="3">
+              <h3 className="stat">3,256 lessons since 2020</h3>
+            </Col>
+            <Col sm="3">
+              <h3 className="stat">8K+ lessons career</h3>
+            </Col>
+            <Col sm="3">
+              <h3 className="stat">650+ golfers helped</h3>
+            </Col>
+            <Col sm="3">
+              <h3 className="stat">95% goals reached</h3>
+            </Col>
+          </Row>
         </Container>
+      </div>
+      <div className="footer">
+        <Container>
+          <Row>
+            <Col>
+            <h2 className="contactTitle">
+            Contact:
+            </h2>
+            </Col>
+         
+        <Col>
+          <p className="contactInfo">714 Contra Costa Blvd. Pleasant Hill, CA 94523</p>
+            <p className="contactInfo">Email: chris.curnutt59@gmail.com</p>
+            <p className="contactInfo">Instagram: @chriscurnuttgolf</p>
+        </Col>
+           
+            </Row>
+        </Container>
+      </div>
 
-        <Toolbar style={{ backgroundColor: '#353535' }}>
-          <Container>
-            <Grid container spacing={2} sx={{ mt: 2, mb: 4 }}>
-              <Grid item lg={3} md={3} sm={6} xs={6}>
-                <item>
-                  <Typography variant="h5" gutterBottom color="#fff" 
-                    fontFamily="avenir" fontWeight={700}
-                  >
-                    3256 <br />
-                    lessons since 2020
-                  </Typography>
-                </item>
-              </Grid>
-              <Grid item lg={3} md={3} sm={6} xs={6}>
-                <item>
-                  <Typography
-                    variant="h5"
-                    component="h6"
-                    gutterBottom
-                    color="#fff"
-                    fontFamily="avenir"
-                    fontWeight={700}
-                  >
-                    8K+ <br />
-                    lessons career
-                  </Typography>
-                </item>
-              </Grid>
-              <Grid item lg={3} md={3} sm={6} xs={6}>
-                <item>
-                  <Typography
-                    variant="h5"
-                    component="h6"
-                    gutterBottom
-                    color="#fff"
-                    fontFamily="avenir"
-                    fontWeight={700}
-                  >
-                    650+ <br />
-                    golfers helped
-                  </Typography>
-                </item>
-              </Grid>
-              <Grid item lg={3} md={3} sm={6} xs={6}>
-                <item>
-                  <Typography
-                    variant="h5"
-                    component="h6"
-                    gutterBottom
-                    color="#fff"
-                    fontFamily="avenir"
-                    fontWeight={700}
-                  >
-                    95% <br />
-                    goals reached
-                  </Typography>
-                </item>
-              </Grid>
-            </Grid>
-          </Container>
-        </Toolbar>
-        <br></br>
-        <br></br>
-        <center>
-        <Typography
-            component="div"
-            variant="h2"
-            fontFamily="avenir"
-            sx={{ mt: 2, mb: 2}}
-            color="black"
-            fontWeight="bold"
-            
-
-          >
-            Lesson Inquiry
-          </Typography>
-          
-        <Typography
-            component="div"
-            fontFamily="avenir"
-            sx={{ mt: 2, mb: 2}}
-            fontSize="20px"
-            color="black"
-            fontWeight="bold"
-            
-
-          >
-            I'm excited to help you begin your lessons and customize a plan that suits your specific needs and goals
-          </Typography>
-        </center>
-   
-
-        <LessonForm/>
-        <br></br>
-        <br></br>
-        {/* <Box
-          sx={{
-            bgcolor: 'background.paper',
-            pb: 70,
-          }}
-          style={BannerStyles2}
-        ></Box> */}
-        <Toolbar style={{backgroundColor:'#116A6C'}}>
-          <Grid container>
-            <Grid item lg="8" md="8" sm="12" xs="12">
-              <item
-                style={{
-                  fontFamily: 'source-sans-pro',
-                  fontWeight: '700',
-                  fontStyle: 'normal',
-                  fontSize: '40px',
-                  fontFamily:'avenir',
-                  color: '#fff'
-                  
-                }}
-              >
-                Contact:
-              </item>
-            </Grid>
-            <Grid item lg="4" md="8" sm="12" xs="12">
-              <item>
-                <Typography
-                  style={{
-                    fontFamily: 'source-sans-pro',
-                    fontStyle: 'normal',
-                    fontSize: '100%',
-                    paddingTop: '20px',
-                    paddingBottom: '20px',
-                    fontFamily:'avenir',
-                    color: '#fff',
-                    fontWeight: "bold"
-                  }}
-                >
-                  714 Contra Costa Blvd. Pleasant Hill, CA 94523<br/>
-                Email:  <Link href="mailto:chris.curnutt59@gmail.com">chris.curnutt59@gmail.com</Link>
-                 <br /> @chriscurnuttgolf
-                </Typography>
-              </item>
-            </Grid>
-          </Grid>
-        </Toolbar>
-      </main>
-    </ThemeProvider>
+    </BaseLayout>
   );
 }

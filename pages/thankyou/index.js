@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
+import GolfLessonForm from '../components/GolfLessonForm';
 
 const MainStyle = {
   overflowX: 'hidden',
@@ -22,6 +23,7 @@ export default function Thankyou() {
             <div className="bio-content">
               <div style={copyStyle}>
                 Thanks for reaching out, Ill be in touch soon!
+                <GolfLessonForm />
               </div>
             </div>
           </Col>
