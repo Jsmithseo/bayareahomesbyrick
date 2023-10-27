@@ -44,7 +44,7 @@ export default function Index() {
             />
           </Col>
           <Col sm="6">
-            <h2 className="aboutTitle">About Me</h2>
+            <h2 className="aboutTitle">About Chris</h2>
             <p>
               Chris Curnutt is originally from Oklahoma and began his golf
               journey at 5 years old in a suburb of Tulsa. He grew up playing
