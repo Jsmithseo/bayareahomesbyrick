@@ -245,6 +245,16 @@ body {
   }
 }
 
+
+
+@media only screen and (max-width: 468px) {
+
+ .jumbtron {
+    background-image: url('../../public/bannersmall3.png') !important;
+    background-repeat: no-repeat;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .mobileView {
     display: none;
