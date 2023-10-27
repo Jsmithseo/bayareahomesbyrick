@@ -224,7 +224,7 @@ body {
   }
 
   .jumbtron {
-    background-image: url('../../public/bannersmall2.png') !important;
+    background-image: url('../../public/bannersmall2.png');
     background-repeat: no-repeat;
   }
 
@@ -250,8 +250,10 @@ body {
 @media only screen and (max-width: 468px) {
 
  .jumbtron {
-    background-image: url('../../public/bannersmall3.png') !important;
+    background-image: url('../../public/bannersmall3.png');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
