@@ -38,9 +38,9 @@ export default function Index() {
         <Row className="aboutSection">
           <Col sm="6">
             <img
-              src="/image6.jpeg" // Replace with your image path
+              src="/image7.png" // Replace with your image path
               alt="Image"
-              className="img-fluid"
+              className="img-fluid client"
             />
           </Col>
           <Col sm="6">
@@ -51,30 +51,26 @@ export default function Index() {
               multiple sports, including soccer and baseball, but decided at the
               age of 15 to focus on golf. In high school, Chris was a member of
               his High School team which amassed over 25 wins, including 3
-              consecutive Oklahoma State Championships. After attending the
-              University of Arkansas with a major in Education, Chris began his
-              career in golf at Shadow Valley CC in Bentonville, AR. Here, he
-              was involved in the instruction program as well as day to day
-              operations. He continued his career at Emerald Falls GC in Broken
-              Arrow, OK, as an Assistant Professional. After moving to the
-              Oklahoma City area, Chris instructed on a part time basis while
-              pursuing a career in restaurant management. 10 years later, Chris
-              and his girlfriend Samantha moved to Northern California and the
-              decision was made that he would return to teaching full time.
+              consecutive Oklahoma State Championships.{' '}
+              <Link href="/about">
+                <span>Learn More</span>
+              </Link>
             </p>
           </Col>
         </Row>
         <br></br>
         <Row className="lessonSection">
-          <Col sm="6">
-            <img
-              src="/lesson.jpeg" // Replace with your image path
-              alt="Image"
-              className="img-fluid"
-            />
-          </Col>
+          <div></div>
           <Col sm="6">
             <h2 className="lessonTitle">LESSONS</h2>
+            <div className="mobileView">
+              <img
+                src="/lesson3.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid"
+              />
+            </div>
+
             <p>
               My goal is to not just show you what to do or how to hit a ball,
               but also educate you on the game so you enjoy playing golf
@@ -107,6 +103,16 @@ export default function Index() {
               you have any additional questions, please email me at{' '}
             </p>
             <Button color="primary">Book a Lesson</Button>
+          </Col>
+
+          <Col sm="6">
+            <div className="desktopView">
+              <img
+                src="/lesson3.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid"
+              />
+            </div>
           </Col>
         </Row>
         {/* <Row className="studentSection">

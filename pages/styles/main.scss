@@ -224,7 +224,7 @@ body {
   }
 
   .jumbtron {
-    background-image: url('../../public/bannersmall2.png')!important;
+    background-image: url('../../public/bannersmall2.png') !important;
     background-repeat: no-repeat;
   }
 
@@ -237,7 +237,17 @@ body {
   }
 
   .statSection {
-    padding-bottom: 0px!important;
+    padding-bottom: 0px !important;
+  }
+
+  .desktopView {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobileView {
+    display: none;
   }
 }
 
@@ -255,6 +265,10 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 300px;
+}
+
+.img-fluid.client {
+  height: auto;
 }
 
 .display-3 {
@@ -335,4 +349,26 @@ h3 {
   color: #fff;
   font-weight: 700;
   font-family: avenir;
+}
+
+.img-fluid.headshot {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.container.about {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+
+.display-3.about {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.container {
+  padding-top: 0px;
 }

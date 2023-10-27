@@ -16,9 +16,22 @@ const copyStyle = {
 export default function About() {
   return (
     <BaseLayout>
-      <div className="jumbtron">
-        <div className="container">
-          <h1 className="display-3">About Me</h1>
+    <center>
+    <img
+              src="/headshot.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid headshot"
+            />
+    </center>
+ 
+
+   
+      <div className='container'>
+        <Row>
+          <Col md="12">
+            <div className="bio-content">
+              <div className="container about">
+          <h1 className="display-3 about">About Me</h1>
           <p>
               Chris Curnutt is originally from Oklahoma and began his golf
               journey at 5 years old in a suburb of Tulsa. He grew up playing
@@ -37,19 +50,11 @@ export default function About() {
               decision was made that he would return to teaching full time.
             </p>
         </div>
-      </div>
-        <div style={MainStyle}>
-      <Container>
-        <Row>
-          <Col md="12">
-            <center></center>
-            <div className="bio-content">
-              <div style={copyStyle}>here</div>
             </div>
           </Col>
         </Row>
-      </Container>
-    </div>
+      </div>
+
     </BaseLayout>
 
   );
