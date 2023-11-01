@@ -19,7 +19,13 @@ const MyHeader = () => {
 
   return (
     <Navbar color="light" light expand="md">
-      <NavbarBrand href="/">Chris Curnutt Golf</NavbarBrand>
+      <NavbarBrand href="/">
+        <img
+          src="/brandname.png" // Replace with your image path
+          alt="Image"
+          className="img-fluid"
+        />
+      </NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>

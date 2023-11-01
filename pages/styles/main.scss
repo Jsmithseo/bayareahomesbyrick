@@ -223,11 +223,6 @@ body {
     font-size: 4rem;
   }
 
-  .jumbtron {
-    background-image: url('../../public/bannersmall2.png');
-    background-repeat: no-repeat;
-  }
-
   .stat {
     font-size: 28px !important;
   }
@@ -245,18 +240,6 @@ body {
   }
 }
 
-
-
-@media only screen and (max-width: 468px) {
-
- .jumbtron {
-    background-image: url('../../public/bannersmall3.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .mobileView {
     display: none;
@@ -264,11 +247,11 @@ body {
 }
 
 .jumbtron {
-  background-image: url('../../public/bannerImage.jpeg') !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 500px;
+  background-color: #20629e;
 }
 
 .jumbtron.putting {
@@ -284,8 +267,7 @@ body {
 }
 
 .display-3 {
-  padding-top: 10%;
-  color: #fff;
+  color: #bec6c8;
   font-weight: 700;
   font-family: avenir;
 }
@@ -332,7 +314,7 @@ h3 {
 }
 
 .ratings {
-  background-color: #2c3e50;
+  background-color: #000;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -345,7 +327,7 @@ h3 {
 }
 
 .footer {
-  background-color: #116a6c;
+  background-color: #20629E;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -371,11 +353,6 @@ h3 {
   padding-top: 50px;
 }
 
-.container.about {
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
-}
-
 .display-3.about {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -383,4 +360,20 @@ h3 {
 
 .container {
   padding-top: 0px;
+}
+
+.img-fluid.logo {
+  padding-top: 10%;
+}
+
+.container.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+
+.aboutlink {
+  padding-left: 5px;
+  color: #20629E;
 }

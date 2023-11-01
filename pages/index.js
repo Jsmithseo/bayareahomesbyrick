@@ -31,7 +31,15 @@ export default function Index() {
     <BaseLayout>
       <div className="jumbtron">
         <div className="container">
-          <h1 className="display-3">Paving the Way to Golf Excellence</h1>
+          <center>
+            <img
+              src="/logo.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid logo"
+            />
+
+            <h1 className="display-3">Paving the Way to Golf Excellence</h1>
+          </center>
         </div>
       </div>
       <Container>
@@ -51,9 +59,9 @@ export default function Index() {
               multiple sports, including soccer and baseball, but decided at the
               age of 15 to focus on golf. In high school, Chris was a member of
               his High School team which amassed over 25 wins, including 3
-              consecutive Oklahoma State Championships.{' '}
-              <Link href="/about">
-                <span>Learn More</span>
+              consecutive Oklahoma State Championships. 
+              <Link className="aboutlink" href="/about">
+                Learn More
               </Link>
             </p>
           </Col>
