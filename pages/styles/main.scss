@@ -1,5 +1,5 @@
-*{
-  font-family: avenir!important;
+* {
+  font-family: avenir !important;
 }
 @font-face {
   font-family: 'Montserrat';
@@ -220,20 +220,18 @@ body {
   }
 
   .container.about {
-    padding-top: 10px!important;
-  
+    padding-top: 10px !important;
   }
   .aboutTitle {
     display: none;
-      }
-      
+  }
+
   .aboutTitleMobile {
     font-weight: 700;
     font-size: 64px;
     padding-top: 20px;
   }
-      
-    
+
   .hero-welcome-wrapper.d-flex.justify-content-end {
     display: none !important;
   }
@@ -249,15 +247,15 @@ body {
     font-size: 28px !important;
   }
   .lessonSection {
-    padding-top:0px!important;
+    padding-top: 0px !important;
   }
   .aboutTitle {
-    padding-top:20px!important;
+    padding-top: 20px !important;
   }
 
   .aboutSection {
     padding-top: 10px !important;
-    padding-bottom: 0px!important;
+    padding-bottom: 0px !important;
   }
 
   .statSection {
@@ -269,20 +267,14 @@ body {
   }
 }
 
-
-
-
 @media only screen and (min-width: 768px) {
   .mobileView {
     display: none;
   }
 
-
   .aboutTitleMobile {
     display: none;
-    
-      }
-    
+  }
 }
 
 .jumbtron {
@@ -367,7 +359,7 @@ h3 {
 }
 
 .footer {
-  background-color: #20629E;
+  background-color: #20629e;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -409,20 +401,16 @@ h3 {
 .container.about {
   padding-top: 50px;
   padding-bottom: 50px;
-
 }
-
 
 .aboutlink {
   padding-left: 5px;
-  color: #20629E;
+  color: #20629e;
 }
-
 
 .carousel {
   background-color: slategrey;
   height: 310px;
-
 }
 
 .carouselbackground {
@@ -430,5 +418,5 @@ h3 {
 }
 
 .w-100 {
-  width: auto!important;
+  width: auto !important;
 }

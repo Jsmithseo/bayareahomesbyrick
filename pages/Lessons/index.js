@@ -20,9 +20,7 @@ export default function Lessons() {
           <Col md="12">
             <center></center>
             <div className="bio-content">
-              <div style={copyStyle}>
-                form here
-              </div>
+              <div style={copyStyle}>form here</div>
             </div>
           </Col>
         </Row>
