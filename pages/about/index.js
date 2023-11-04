@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayouts';
+import Carousel from '../components/carousel'
 
 const MainStyle = {
   overflowX: 'hidden',
@@ -61,7 +62,9 @@ export default function About() {
           </Col>
         </Row>
         </div>
-        <div className="footer">
+
+
+      <div className="footer">
         <Container>
           <Row>
             <Col>

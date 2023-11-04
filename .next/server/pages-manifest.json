@@ -1,12 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/api/sendMail": "pages/api/sendMail.js",
   "/_error": "pages/_error.js",
-  "/components/layouts/BaseLayouts": "pages/components/layouts/BaseLayouts.js",
-  "/components/shared/Header": "pages/components/shared/Header.js",
-  "/Lessons": "pages/Lessons.js",
-  "/components/GolfLessonForm": "pages/components/GolfLessonForm.js",
-  "/": "pages/index.js",
-  "/about": "pages/about.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js"
 }

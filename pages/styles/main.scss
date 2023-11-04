@@ -1,3 +1,6 @@
+*{
+  font-family: avenir!important;
+}
 @font-face {
   font-family: 'Montserrat';
   src: url('/fonts/ Montserrat-Regular.ttf');
@@ -212,6 +215,25 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  img.img-fluid.logo {
+    padding-top: 25%;
+  }
+
+  .container.about {
+    padding-top: 10px!important;
+  
+  }
+  .aboutTitle {
+    display: none;
+      }
+      
+  .aboutTitleMobile {
+    font-weight: 700;
+    font-size: 64px;
+    padding-top: 20px;
+  }
+      
+    
   .hero-welcome-wrapper.d-flex.justify-content-end {
     display: none !important;
   }
@@ -226,9 +248,16 @@ body {
   .stat {
     font-size: 28px !important;
   }
+  .lessonSection {
+    padding-top:0px!important;
+  }
+  .aboutTitle {
+    padding-top:20px!important;
+  }
 
   .aboutSection {
     padding-top: 10px !important;
+    padding-bottom: 0px!important;
   }
 
   .statSection {
@@ -240,10 +269,20 @@ body {
   }
 }
 
+
+
+
 @media only screen and (min-width: 768px) {
   .mobileView {
     display: none;
   }
+
+
+  .aboutTitleMobile {
+    display: none;
+    
+      }
+    
 }
 
 .jumbtron {
@@ -270,6 +309,7 @@ body {
   color: #bec6c8;
   font-weight: 700;
   font-family: avenir;
+  padding-top: 20px;
 }
 
 p {
@@ -376,4 +416,19 @@ h3 {
 .aboutlink {
   padding-left: 5px;
   color: #20629E;
+}
+
+
+.carousel {
+  background-color: slategrey;
+  height: 310px;
+
+}
+
+.carouselbackground {
+  background-color: slategrey;
+}
+
+.w-100 {
+  width: auto!important;
 }
