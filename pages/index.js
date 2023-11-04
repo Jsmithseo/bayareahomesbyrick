@@ -206,7 +206,7 @@ export default function Index() {
         </Container>
       </div>
       <Row className='carouselbackground'>
-    <Col md="5" className="mx-auto">
+    <Col md="5" sm="12" xs="12" className="mx-auto">
       <UncontrolledCarousel items={items} />
     </Col>
   </Row>
