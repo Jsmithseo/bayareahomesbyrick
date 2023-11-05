@@ -110,7 +110,7 @@ export default function Index() {
               <img
                 src="/lesson3.png" // Replace with your image path
                 alt="Image"
-                className="img-fluid"
+                className="img-fluid lesson"
               />
             </div>
             <br />

@@ -297,6 +297,10 @@ body {
   height: auto;
 }
 
+.img-fluid.lesson {
+  margin-top: -100px!important;
+}
+
 .display-3 {
   color: #bec6c8;
   font-weight: 700;
@@ -436,7 +440,7 @@ h3 {
 
 @media screen and (max-width: 480px) {
   .w-100 {
-    max-width: 70%; /* Further reduce image size for screens up to 480px wide */
+    max-width: 85%; /* Further reduce image size for screens up to 480px wide */
   }
 }
 
