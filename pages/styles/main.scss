@@ -358,7 +358,7 @@ h3 {
   font-family: 'source-sans-pro', sans-serif;
 }
 
-.footer {
+.MainFooter {
   background-color: #20629e;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -421,13 +421,10 @@ h3 {
   width: auto !important;
 }
 
-
-
 /* Set a maximum width for all images to prevent them from overflowing their containers */
-.w-100 
-  {
+.w-100 {
   max-width: 100%; /* Images won't exceed their container width */
-  height: auto;    /* Maintain the aspect ratio */
+  height: auto; /* Maintain the aspect ratio */
 }
 
 /* Use media queries to adjust image sizes for different screen sizes */
@@ -441,4 +438,8 @@ h3 {
   .w-100 {
     max-width: 80%; /* Further reduce image size for screens up to 480px wide */
   }
+}
+
+div#hbspt-form-9d50ba9c-a312-424e-b91f-a685171bccdc{
+  width: 50%;
 }

@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayouts';
 import Carousel from '../components/carousel';
+import HubSpotContactForm from '../components/HubSptContactForm';
+
 
 const MainStyle = {
   overflowX: 'hidden',
@@ -62,24 +64,16 @@ export default function About() {
           </Col>
         </Row>
       </div>
-
-      <div className="footer">
+      <div>
         <Container>
-          <Row>
-            <Col>
-              <h2 className="contactTitle">Contact:</h2>
-            </Col>
+        <HubSpotContactForm
+      id="HubSpotContactForm"
 
-            <Col>
-              <p className="contactInfo">
-                714 Contra Costa Blvd. Pleasant Hill, CA 94523
-              </p>
-              <p className="contactInfo">Email: chris.curnutt59@gmail.com</p>
-              <p className="contactInfo">Instagram: @chriscurnuttgolf</p>
-            </Col>
-          </Row>
+                />
         </Container>
+   
       </div>
+
     </BaseLayout>
   );
 }
