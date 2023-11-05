@@ -205,7 +205,9 @@ export default function Index() {
       </div>
       <Row className="carouselbackground">
         <center>
-          <UncontrolledCarousel items={items} />
+          <UncontrolledCarousel items={items}
+          interval={5000} 
+           />
         </center>
       </Row>
     </BaseLayout>
