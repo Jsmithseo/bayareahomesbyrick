@@ -158,7 +158,7 @@ export default function Index() {
             schedule you lessons. Once your lessons have been confirmed, you
             will receive a pre-assessment form to fill out. This will prepare us
             for the swing assessment and help guide your lesson program.
-            <Link className="aboutlink" href="#">
+            <Link className="aboutlink" href="/Lessons">
               Book a Lesson
             </Link>
           </Col>
