@@ -20,7 +20,7 @@ const BaseLayout = (props) => {
               <p className="contactInfo">
                 714 Contra Costa Blvd. Pleasant Hill, CA 94523
               </p>
-              <p className="contactInfo">Email: chris.curnutt59@gmail.com</p>
+              <p className="contactInfo">Email: chris@chriscurnuttgolf.com</p>
               <p className="contactInfo">Instagram: @chriscurnuttgolf</p>
             </Col>
           </Row>

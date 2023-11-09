@@ -39,9 +39,7 @@ const MyHeader = () => {
             <NavLink href="/contact">Contact</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#" style={{ color: '#ff0000' }}>
-              This Site is under Contruction
-            </NavLink>
+
           </NavItem>
         </Nav>
       </Collapse>
