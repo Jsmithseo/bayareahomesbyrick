@@ -20,27 +20,28 @@ const MyHeader = () => {
   return (
     <Navbar color="light" light expand="md">
       <NavbarBrand href="/">
-        <img
+        {/* <img
           src="/brandname.png" // Replace with your image path
           alt="Image"
           className="img-fluid"
-        />
+        /> */}
       </NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
+        <NavItem>
+            <NavLink href="/">Home</NavLink>
+          </NavItem>
           <NavItem>
             <NavLink href="/about">About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/Lessons">Lessons</NavLink>
+            <NavLink href="/Homes">View Homes</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/contact">Contact</NavLink>
           </NavItem>
-          <NavItem>
-
-          </NavItem>
+          <NavItem></NavItem>
         </Nav>
       </Collapse>
     </Navbar>

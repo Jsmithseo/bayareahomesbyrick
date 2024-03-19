@@ -1,5 +1,5 @@
 import Header from '../shared/Header';
-import { Container, Row, Col} from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 const BaseLayout = (props) => {
   const { className, user, loading, children } = props;
@@ -18,10 +18,14 @@ const BaseLayout = (props) => {
 
             <Col>
               <p className="contactInfo">
-                714 Contra Costa Blvd. Pleasant Hill, CA 94523
+              Real Estate Salesperson
+Coldwell Banker Solano Pacific
+CalRE #: 01126204
               </p>
-              <p className="contactInfo">Email: chris@chriscurnuttgolf.com</p>
-              <p className="contactInfo">Instagram: @chriscurnuttgolf</p>
+              <p className="contactInfo">Business: (707) 749-6329</p>
+              <p className="contactInfo">Mobile: (707) 853-8610</p>
+              <p className="contactInfo">rick.crisostomo@coldwellbanker.com</p>
+              <p  className="contactInfo"> CalRE #: 01126204</p>
             </Col>
           </Row>
         </Container>

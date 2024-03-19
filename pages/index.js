@@ -64,37 +64,30 @@ export default function Index() {
       <div className="jumbtron">
         <div className="container">
           <center>
-            <img
-              src="/logo.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid logo"
-            />
-
-            <h1 className="display-3">Paving the Way to Golf Excellence</h1>
-            <Button href="/Lessons">Get Started</Button>
+            <h1 className="display-3">Bay Area Home By Rick</h1>
+            <Button href="/Lessons">View Homes</Button>
           </center>
         </div>
       </div>
       <Container>
         <Row className="aboutSection">
-          <h2 className="aboutTitleMobile">About Chris</h2>
+          <h2 className="aboutTitleMobile">About Rick</h2>
           <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
-            <img
+            {/* <img
               src="/image7.png" // Replace with your image path
               alt="Image"
               className="img-fluid client"
-            />
+            /> */}
           </Col>
           <Col xs="12" sm="12" md="6" lg="offset-4">
-            <h2 className="aboutTitle">About Chris</h2>
+            <h2 className="aboutTitle">About Rick</h2>
             <br></br>
             <p>
-              Chris Curnutt is originally from Oklahoma and began his golf
-              journey at 5 years old in a suburb of Tulsa. He grew up playing
-              multiple sports, including soccer and baseball, but decided at the
-              age of 15 to focus on golf. In high school, Chris was a member of
-              his High School team which amassed over 25 wins, including 3
-              consecutive Oklahoma State Championships.
+              Rick Crisostomo is a dedicated real estate professional known for
+              his deep commitment to the Vallejo and Benicia communities. With a
+              keen eye for detail and a passion for helping others find their
+              perfect home, Rick has established himself as a trusted name in
+              the local real estate market.
               <Link className="aboutlink" href="/about">
                 Learn More
               </Link>
@@ -143,24 +136,12 @@ export default function Index() {
 
           <Col xs="12" sm="12" md="6" lg="6">
             <div className="desktopView">
-              <img
+              {/* <img
                 src="/lesson3.png" // Replace with your image path
                 alt="Image"
                 className="img-fluid"
-              />
+              /> */}
             </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs="12" sm="12" md="12" lg="12">
-            <h3>LET'S GET SOMETHING ON THE BOOKS</h3>
-            Please click on the button below and we can begin the process to
-            schedule you lessons. Once your lessons have been confirmed, you
-            will receive a pre-assessment form to fill out. This will prepare us
-            for the swing assessment and help guide your lesson program.
-            <Link className="aboutlink" href="/Lessons">
-              Book a Lesson
-            </Link>
           </Col>
         </Row>
         {/* <Row className="studentSection">
@@ -177,16 +158,16 @@ export default function Index() {
         </Row> */}
         <br />
         <br />
-        <Row className="statSection">
+        {/* <Row className="statSection">
           <div className="jumbtron putting">
             <div className="container">
               <h1 className="display-3"></h1>
             </div>
           </div>
-        </Row>
+        </Row> */}
       </Container>
       <div className="ratings">
-        <Container>
+        {/* <Container>
           <Row>
             <Col lg="3" md="3" sm="12" xs="12">
               <h3 className="stat">3,256 lessons since 2020</h3>
@@ -201,14 +182,12 @@ export default function Index() {
               <h3 className="stat">95% goals reached</h3>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </div>
       <Row className="carouselbackground">
-        <center>
-          <UncontrolledCarousel items={items}
-          interval={5000} 
-           />
-        </center>
+        {/* <center>
+          <UncontrolledCarousel items={items} interval={5000} />
+        </center> */}
       </Row>
     </BaseLayout>
   );

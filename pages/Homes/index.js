@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import HubSpotForm from '../components/HubSpotForm';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayouts';
@@ -13,39 +12,36 @@ const copyStyle = {
   textAlign: 'center',
 };
 
-
 export default function Lessons() {
   return (
     <BaseLayout>
-          <div className="jumbtron">
+      <div className="jumbtron">
         <div className="container">
           <center>
-            <img
+            {/* <img
               src="/logo.png" // Replace with your image path
               alt="Image"
               className="img-fluid logo"
-            />
+            /> */}
 
-            <h1 className="display-3">Lessons</h1>
-
+            <h1 className="display-3">Homes for Sales</h1>
           </center>
         </div>
       </div>
-    <div style={MainStyle}>
-      <Container>
-        <Row>
-          <Col md="12">
-          <br></br>
-          <br></br>
-              <HubSpotForm 
-              id="hubspotForm"
-              />
+      <div style={MainStyle}>
+        <Container>
+          {/* <Row>
+            <Col md="12">
               <br></br>
-          <br></br>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+              <br></br>
+              <HubSpotForm id="hubspotForm" />
+              <br></br>
+              <br></br>
+            </Col>
+          </Row> */}
+          Here we will have a MLS listings
+        </Container>
+      </div>
     </BaseLayout>
   );
 }
