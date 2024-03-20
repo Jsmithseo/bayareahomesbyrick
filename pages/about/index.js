@@ -78,9 +78,6 @@ export default function About() {
         </Row>
       </div>
       <div>
-        <Container>
-          {/* <HubSpotContactForm id="HubSpotContactForm" /> */}
-        </Container>
       </div>
     </BaseLayout>
   );
