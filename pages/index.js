@@ -66,6 +66,11 @@ export default function Index() {
           <center>
             <h1 className="display-3">Bay Area Home By Rick</h1>
             <Button href="/Lessons">View Homes</Button>
+            <br></br>
+            <br></br>
+            <br></br>
+
+            <h2>This site is currently under construction.</h2>
           </center>
         </div>
       </div>
@@ -73,24 +78,25 @@ export default function Index() {
         <Row className="aboutSection">
           <h2 className="aboutTitleMobile">About Rick</h2>
           <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
-            {/* <img
-              src="/image7.png" // Replace with your image path
+            <img
+              src="/featured_listing.jpg" // Replace with your image path
               alt="Image"
               className="img-fluid client"
-            /> */}
+            />
           </Col>
           <Col xs="12" sm="12" md="6" lg="offset-4">
-            <h2 className="aboutTitle">About Rick</h2>
+            <h2 className="aboutTitle">Featured Listing</h2>
             <br></br>
+            <h3>4727 Hummingbird Ct Fairfield, CA 94534 <br></br></h3>
             <p>
-              Rick Crisostomo is a dedicated real estate professional known for
-              his deep commitment to the Vallejo and Benicia communities. With a
-              keen eye for detail and a passion for helping others find their
-              perfect home, Rick has established himself as a trusted name in
-              the local real estate market.
-              <Link className="aboutlink" href="/about">
+             
+
+              Enjoy the Fairfield lifestyle in this fabulous 5 bedroom, 3 bath home. Built in 2002
+              with a clean and well-planned 2763 sqft floorplan. This beautiful
+              home will sell fast! Send an inquiry in the form below.
+              {/* <Link className="aboutlink" href="/about">
                 Learn More
-              </Link>
+              </Link> */}
             </p>
           </Col>
         </Row>
