@@ -98,7 +98,7 @@ export default function Index() {
         <Row className="lessonSection">
           <div></div>
           <Col xs="12" sm="12" md="6" lg="6">
-            <h2 className="lessonTitle">LESSONS</h2>
+            <h2 className="lessonTitle">Buyers</h2>
             <div className="mobileView">
               <img
                 src="/lesson3.png" // Replace with your image path
@@ -109,28 +109,33 @@ export default function Index() {
             <br />
 
             <p>
-              My goal is to not just show you what to do or how to hit a ball,
-              but also educate you on the game so you enjoy playing golf
-              everytime you are on the course.
+              Vestibulum iaculis lacinia est. Proin dictum elementum velit.
+              Fusce euismod consequat ante. Lorem ipsum dolor sit amet,
+              consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam
+              congue fermentum nisl.
             </p>
             <br />
             <p>
-              All lessons start with a 60 minute swing assessment ($150). Swing
-              assessments are included in lesson packages of 10 and more. This
-              first step will help both you and I create your personalized
-              lesson program. During the assessment, we will discuss your golf
-              goals, diagnose both ball flight and golf swing, and structure the
-              lesson plan for each visit.{' '}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+              nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
+              ligula massa, varius a, semper congue, euismod non, mi. Proin
+              porttitor, orci nec nonummy molestie, enim est eleifend mi, non
+              fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
+              scelerisque vitae, consequat in, pretium a, enim. Pellentesque
+              congue.{' '}
             </p>
             <br></br>
-            <h3>SERVICES AND PACKAGES</h3>
+            <h2 className="lessonTitle">Sellers</h2>
             <p>
-              The services and packages offered are designed to help you reach
-              your potential to play your best golf based on what you are
-              looking to achieve. Lessons start at $210, with various packages
-              available depending on your goals. Each lesson is 60 minutes and
-              for junior golfers (under 17) there is a 30% discount on full
-              packages.{' '}
+              Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet,
+              tincidunt ac, viverra sed, nulla. Donec porta diam eu massa.
+              Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae,
+              pede. Donec eget tellus non erat lacinia fermentum. Donec in velit
+              vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin
+              dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum
+              dolor sit amet, consectetuer adipiscing elit. Pellentesque sed
+              dolor. Aliquam congue fermentum nisl.{' '}
             </p>
           </Col>
 

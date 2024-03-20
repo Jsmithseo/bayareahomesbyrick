@@ -4,7 +4,6 @@ import { Container, Row, Col } from 'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayouts';
 import Carousel from '../components/carousel';
 
-
 const MainStyle = {
   overflowX: 'hidden',
 };
@@ -72,14 +71,12 @@ export default function About() {
                 in your success and well-being. Let Rick guide you through your
                 real estate journey with confidence, expertise, and a personal
                 touch that makes all the difference.
-                
               </p>
             </div>
           </Col>
         </Row>
       </div>
-      <div>
-      </div>
+      <div></div>
     </BaseLayout>
   );
 }

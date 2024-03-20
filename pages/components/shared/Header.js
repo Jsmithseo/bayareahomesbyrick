@@ -29,7 +29,7 @@ const MyHeader = () => {
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
-        <NavItem>
+          <NavItem>
             <NavLink href="/">Home</NavLink>
           </NavItem>
           <NavItem>
