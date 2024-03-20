@@ -72,6 +72,7 @@ export default function About() {
                 in your success and well-being. Let Rick guide you through your
                 real estate journey with confidence, expertise, and a personal
                 touch that makes all the difference.
+                
               </p>
             </div>
           </Col>
