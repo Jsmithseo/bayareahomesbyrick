@@ -61,6 +61,8 @@ export default function Index() {
   };
   return (
     <BaseLayout>
+      <div id="idxStart"></div>
+      <div id="idxStop"></div>
       <div className="jumbtron">
         <div className="container">
           <center>
@@ -87,13 +89,14 @@ export default function Index() {
           <Col xs="12" sm="12" md="6" lg="offset-4">
             <h2 className="aboutTitle">Featured Listing</h2>
             <br></br>
-            <h3>4727 Hummingbird Ct Fairfield, CA 94534 <br></br></h3>
+            <h3>
+              4727 Hummingbird Ct Fairfield, CA 94534 <br></br>
+            </h3>
             <p>
-             
-
-              Enjoy the Fairfield lifestyle in this fabulous 5 bedroom, 3 bath home. Built in 2002
-              with a clean and well-planned 2763 sqft floorplan. This beautiful
-              home will sell fast! Send an inquiry in the form below.
+              Enjoy the Fairfield lifestyle in this fabulous 5 bedroom, 3 bath
+              home. Built in 2002 with a clean and well-planned 2763 sqft
+              floorplan. This beautiful home will sell fast! Send an inquiry in
+              the form below.
               {/* <Link className="aboutlink" href="/about">
                 Learn More
               </Link> */}
