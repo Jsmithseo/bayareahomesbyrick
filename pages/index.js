@@ -67,7 +67,7 @@ export default function Index() {
         <div className="container">
           <center>
             <h1 className="display-3">Bay Area Home By Rick</h1>
-            <Button href="/Lessons">View Homes</Button>
+            <Button><Link href="https://bayareahomesbyrick.idxbroker.com/idx/search/advanced">Search MLS</Link></Button>
             <br></br>
             <br></br>
             <br></br>

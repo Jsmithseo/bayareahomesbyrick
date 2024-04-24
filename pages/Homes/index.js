@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayouts';
+
+import Link from 'next/link';
+
 const MainStyle = {
   overflowX: 'hidden',
 };
@@ -24,7 +27,7 @@ export default function Lessons() {
               className="img-fluid logo"
             /> */}
 
-            <h1 className="display-3">Homes for Sales</h1>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/idx/search/advanced"><h1 className="display-3">Search MLS</h1></Link>
           </center>
         </div>
       </div>
