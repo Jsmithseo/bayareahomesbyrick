@@ -27,7 +27,9 @@ export default function Lessons() {
               className="img-fluid logo"
             /> */}
 
-            <Link href="https://bayareahomesbyrick.idxbroker.com/idx/search/advanced"><h1 className="display-3">Search MLS</h1></Link>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/idx/search/advanced">
+              <h1 className="display-3">Search MLS</h1>
+            </Link>
           </center>
         </div>
       </div>

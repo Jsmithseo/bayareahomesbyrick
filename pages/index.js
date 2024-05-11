@@ -67,7 +67,11 @@ export default function Index() {
         <div className="container">
           <center>
             <h1 className="display-3">Bay Area Home By Rick</h1>
-            <Button><Link href="https://bayareahomesbyrick.idxbroker.com/idx/search/advanced">Search Homes For Sale</Link></Button>
+            <Button>
+              <Link href="https://bayareahomesbyrick.idxbroker.com/idx/search/advanced">
+                Search Homes For Sale
+              </Link>
+            </Button>
             <br></br>
             <br></br>
             <br></br>
@@ -97,13 +101,82 @@ export default function Index() {
               home. Built in 2002 with a clean and well-planned 2763 sqft
               floorplan. This beautiful home will sell fast! Send an inquiry in
               the form below.
-              {/* <Link className="aboutlink" href="/about">
-                Learn More
-              </Link> */}
             </p>
+            <Link
+              className="aboutlink"
+              href="https://bayareahomesbyrick.idxbroker.com/idx/details/listing/c092/324017468/4727-Hummingbird-Court-Fairfield-CAs"
+            >
+              View Listing
+            </Link>
           </Col>
         </Row>
         <br></br>
+        <br></br>
+        <br></br>
+        <center>
+        <h2>Featured Areas</h2>
+        </center>
+        <br></br>
+        <br></br>
+        <Row>
+          <Col xs="12" sm="4">
+            <center><h3>Vallejo Homes for Sale</h3></center>
+          <img
+              src="/vallejohomeTile.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid client"
+            />
+          </Col>
+          <Col xs="12" sm="4">
+          <center><h3>Benicia Homes for Sale</h3></center>
+          <img
+              src="/beniciahomeTile.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid client"
+            />
+          </Col>
+          <Col xs="12" sm="4">
+          <center><h3>Fairfield Homes for Sale</h3></center>
+          <img
+              src="/fairfieldhomeTile.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid client"
+            />
+          </Col>
+        </Row>
+
+        <br></br>
+        <br></br>
+        <Row>
+          <Col xs="12" sm="4">
+          <center><h3>Grass Valley Homes for Sale</h3></center>
+
+            <img
+              src="/grassvalleyTile.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid client"
+            />
+          </Col>
+          <Col xs="12" sm="4">
+          <center><h3>Vacaville Homes for Sale</h3></center>
+
+          <img
+              src="/vacavillehomeTile.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid client"
+            />
+          </Col>
+      
+          <Col xs="12" sm="4">
+          <center><h3>Cordelia Homes for Sale</h3></center>
+          <img
+              src="/cordeliahomeTile.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid client"
+            />
+          </Col>
+        </Row>
+
         <Row className="lessonSection">
           <div></div>
           <Col xs="12" sm="12" md="6" lg="6">

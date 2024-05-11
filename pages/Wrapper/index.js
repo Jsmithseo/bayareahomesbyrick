@@ -18,7 +18,7 @@ export default function Wrapper() {
   return (
     <BaseLayout>
       <div id="idxStart"></div>
-    <div id="idxStop"></div>
+      <div id="idxStop"></div>
     </BaseLayout>
   );
 }
