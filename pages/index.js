@@ -1,14 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 
-import { jsx } from '@emotion/react';
-import styled from '@emotion/styled';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
 // import MaterialContactform from './components/MaterialContactform';
 import Link from 'next/link';
 import { Jumbotron, Container } from 'reactstrap';
-import { UncontrolledCarousel } from 'reactstrap';
 
 import { Row, Col, Button } from 'reactstrap';
 import BaseLayout from './components/layouts/BaseLayouts.js';
@@ -84,27 +78,39 @@ export default function Index() {
         <Row className="aboutSection">
           <h2 className="aboutTitleMobile">About Rick</h2>
           <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
-            <img
-              src="/featured_listing.jpg" // Replace with your image path
-              alt="Image"
-              className="img-fluid client"
-            />
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/4727-hummingbird-ct-fairfield">
+              <img
+                src="/featured_listing.jpg" // Replace with your image path
+                alt="Image"
+                className="img-fluid client"
+              />
+            </Link>
           </Col>
           <Col xs="12" sm="12" md="6" lg="offset-4">
             <h2 className="aboutTitle">Featured Listing</h2>
-            <br></br>
             <h3>
               4727 Hummingbird Ct Fairfield, CA 94534 <br></br>
             </h3>
             <p>
-              Enjoy the Fairfield lifestyle in this fabulous 5 bedroom, 3 bath
-              home. Built in 2002 with a clean and well-planned 2763 sqft
-              floorplan. This beautiful home will sell fast! Send an inquiry in
-              the form below.
+              4727 Hummingbird Ct in Fairfield, CA 94534 presents a remarkable
+              opportunity to experience the quintessential Fairfield lifestyle.
+              This spacious and meticulously crafted home boasts 5 bedrooms, 3
+              baths, and a thoughtfully designed 2763 sqft floorplan, offering
+              both elegance and comfort. Built in 2002, the home exudes a
+              timeless charm, evident in its well-appointed features and
+              contemporary layout.
+            </p>
+            <p>
+              As you step inside, you are greeted by expansive living areas that
+              seamlessly flow from one space to the next, creating an inviting
+              atmosphere for gatherings and relaxation alike. The gourmet
+              kitchen is a focal point, equipped with high-end appliances, ample
+              counter space, and stylish cabinetry, catering to the needs of the
+              modern homeowner.
             </p>
             <Link
               className="aboutlink"
-              href="https://bayareahomesbyrick.idxbroker.com/idx/details/listing/c092/324017468/4727-Hummingbird-Court-Fairfield-CAs"
+              href="https://bayareahomesbyrick.idxbroker.com/i/4727-hummingbird-ct-fairfield"
             >
               View Listing
             </Link>
@@ -114,34 +120,46 @@ export default function Index() {
         <br></br>
         <br></br>
         <center>
-        <h2>Featured Areas</h2>
+          <h2>Featured Areas</h2>
         </center>
         <br></br>
         <br></br>
         <Row>
           <Col xs="12" sm="4">
-            <center><h3>Vallejo Homes for Sale</h3></center>
-          <img
-              src="/vallejohomeTile.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid client"
-            />
+            <center>
+              <h3>Vallejo Homes for Sale</h3>
+            </center>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/vallejo-homes">
+              <img
+                src="/vallejohomeTile.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid client"
+              />
+            </Link>
           </Col>
           <Col xs="12" sm="4">
-          <center><h3>Benicia Homes for Sale</h3></center>
-          <img
-              src="/beniciahomeTile.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid client"
-            />
+            <center>
+              <h3>Benicia Homes for Sale</h3>
+            </center>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/benicia-homes-for-sale">
+              <img
+                src="/beniciahomeTile.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid client"
+              />
+            </Link>
           </Col>
           <Col xs="12" sm="4">
-          <center><h3>Fairfield Homes for Sale</h3></center>
-          <img
-              src="/fairfieldhomeTile.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid client"
-            />
+            <center>
+              <h3>Fairfield Homes for Sale</h3>
+            </center>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/fairfield-homes-for-sale">
+              <img
+                src="/fairfieldhomeTile.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid client"
+              />
+            </Link>
           </Col>
         </Row>
 
@@ -149,37 +167,47 @@ export default function Index() {
         <br></br>
         <Row>
           <Col xs="12" sm="4">
-          <center><h3>Grass Valley Homes for Sale</h3></center>
-
-            <img
-              src="/grassvalleyTile.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid client"
-            />
+            <center>
+              <h3>Grass Valley Homes for Sale</h3>
+            </center>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/grass-valley-homes-for-sale">
+              <img
+                src="/grassvalleyTile.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid client"
+              />
+            </Link>
           </Col>
           <Col xs="12" sm="4">
-          <center><h3>Vacaville Homes for Sale</h3></center>
-
-          <img
-              src="/vacavillehomeTile.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid client"
-            />
+            <center>
+              <h3>Vacaville Homes for Sale</h3>
+            </center>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/vacaville-homes-for-sale">
+              <img
+                src="/vacavillehomeTile.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid client"
+              />
+            </Link>
           </Col>
-      
+
           <Col xs="12" sm="4">
-          <center><h3>Cordelia Homes for Sale</h3></center>
-          <img
-              src="/cordeliahomeTile.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid client"
-            />
+            <center>
+              <h3>Cordelia Homes for Sale</h3>
+            </center>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/cordelia-home-for-sale-">
+              <img
+                src="/cordeliahomeTile.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid client"
+              />
+            </Link>
           </Col>
         </Row>
-
+        <br></br>
+        <br></br>
         <Row className="lessonSection">
-          <div></div>
-          <Col xs="12" sm="12" md="6" lg="6">
+          <Col xs="6" sm="6" md="6" lg="6">
             <h2 className="lessonTitle">Buyers</h2>
             <div className="mobileView">
               <img
@@ -191,44 +219,22 @@ export default function Index() {
             <br />
 
             <p>
-              Vestibulum iaculis lacinia est. Proin dictum elementum velit.
-              Fusce euismod consequat ante. Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam
-              congue fermentum nisl.
+              Looking for the perfect home? Our team of experienced real estate
+              agents is here to guide you through every step of the buying
+              process. Whether you're a first-time buyer or looking to upgrade,
+              we're committed to helping you find the home of your dreams.
             </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-              risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-              nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
-              ligula massa, varius a, semper congue, euismod non, mi. Proin
-              porttitor, orci nec nonummy molestie, enim est eleifend mi, non
-              fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
-              scelerisque vitae, consequat in, pretium a, enim. Pellentesque
-              congue.{' '}
-            </p>
-            <br></br>
+            <Link href="/Buyers"> Learn More</Link>
+          </Col>
+          <Col xs="6" sm="6" md="6" lg="6">
             <h2 className="lessonTitle">Sellers</h2>
             <p>
-              Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet,
-              tincidunt ac, viverra sed, nulla. Donec porta diam eu massa.
-              Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae,
-              pede. Donec eget tellus non erat lacinia fermentum. Donec in velit
-              vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin
-              dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum
-              dolor sit amet, consectetuer adipiscing elit. Pellentesque sed
-              dolor. Aliquam congue fermentum nisl.{' '}
+              Thinking of selling your home? Our team of dedicated real estate
+              professionals is here to help you navigate the selling process
+              with ease. From listing your property to closing the deal, we're
+              committed to getting you the best price for your home.
             </p>
-          </Col>
-
-          <Col xs="12" sm="12" md="6" lg="6">
-            <div className="desktopView">
-              {/* <img
-                src="/lesson3.png" // Replace with your image path
-                alt="Image"
-                className="img-fluid"
-              /> */}
-            </div>
+            <Link href="/Sellers"> Learn More</Link>
           </Col>
         </Row>
         {/* <Row className="studentSection">
