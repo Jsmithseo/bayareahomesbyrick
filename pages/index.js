@@ -237,51 +237,20 @@ export default function Index() {
             <Link href="/Sellers"> Learn More</Link>
           </Col>
         </Row>
-        {/* <Row className="studentSection">
-          <Col sm="6">
-            <img
-            src="/lesson.jpeg" // Replace with your image path
-            alt="Image"
-            className="img-fluid"
-          />
-          </Col>
-          <Col sm="6">
-            <h3 className="studentTitle">Students</h3>
-          </Col>
-        </Row> */}
+       
         <br />
         <br />
-        {/* <Row className="statSection">
-          <div className="jumbtron putting">
-            <div className="container">
-              <h1 className="display-3"></h1>
-            </div>
-          </div>
-        </Row> */}
+       
+        <div
+                  dangerouslySetInnerHTML={{
+                    __html: `
+
+                    <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-33749" src="//bayareahomesbyrick.idxbroker.com/idx/mapwidgetjs.php?widgetid=33749"></script>
+      `,
+                  }}
+                />
+                <br></br>
       </Container>
-      <div className="ratings">
-        {/* <Container>
-          <Row>
-            <Col lg="3" md="3" sm="12" xs="12">
-              <h3 className="stat">3,256 lessons since 2020</h3>
-            </Col>
-            <Col lg="3" md="3" sm="12" xs="12">
-              <h3 className="stat">8K+ lessons career</h3>
-            </Col>
-            <Col lg="3" md="3" sm="12" xs="12">
-              <h3 className="stat">650+ golfers helped</h3>
-            </Col>
-            <Col lg="3" md="3" sm="12" xs="12">
-              <h3 className="stat">95% goals reached</h3>
-            </Col>
-          </Row>
-        </Container> */}
-      </div>
-      <Row className="carouselbackground">
-        {/* <center>
-          <UncontrolledCarousel items={items} interval={5000} />
-        </center> */}
-      </Row>
     </BaseLayout>
   );
 }

@@ -42,16 +42,24 @@ export default function Buyers() {
                 <br></br>
                 <br></br>
                 <li>
-                  <b>Market Knowledge: </b> With my in-depth knowledge of the local market, I can help you price your home competitively to attract potential buyers.{' '}
+                  <b>Market Knowledge: </b> With my in-depth knowledge of the
+                  local market, I can help you price your home competitively to
+                  attract potential buyers.{' '}
                 </li>
                 <li>
-                  <b>Marketing Expertise:</b>I use a variety of marketing strategies to showcase your property to a wide audience, including online listings, social media, and traditional marketing methods.
+                  <b>Marketing Expertise:</b>I use a variety of marketing
+                  strategies to showcase your property to a wide audience,
+                  including online listings, social media, and traditional
+                  marketing methods.
                 </li>
                 <li>
-                  <b>Staging and Photography:</b>Presentation is key. I offer staging and professional photography services to make your home look its best and stand out to buyers.
+                  <b>Staging and Photography:</b>Presentation is key. I offer
+                  staging and professional photography services to make your
+                  home look its best and stand out to buyers.
                 </li>
                 <li>
-                  <b>Negotiation Skills:</b> I am a skilled negotiators who will work tirelessly to get you the best price for your home.
+                  <b>Negotiation Skills:</b> I am a skilled negotiators who will
+                  work tirelessly to get you the best price for your home.
                 </li>
                 <br></br>
                 <br></br>
@@ -61,16 +69,20 @@ export default function Buyers() {
                 <br></br>
                 <br></br>
                 <li>
-                  <b>Property Valuation:</b> Receive a complimentary property valuation to determine the market value of your home.
+                  <b>Property Valuation:</b> Receive a complimentary property
+                  valuation to determine the market value of your home.
                 </li>
                 <li>
-                  <b>Marketing Plan:</b> We'll create a customized marketing plan tailored to your property to attract the right buyers.
+                  <b>Marketing Plan:</b> We'll create a customized marketing
+                  plan tailored to your property to attract the right buyers.
                 </li>
                 <li>
-                  <b>Contract Negotiation: </b>  Schedule open houses and private showings to showcase your home to potential buyers.
+                  <b>Contract Negotiation: </b> Schedule open houses and private
+                  showings to showcase your home to potential buyers.
                 </li>
                 <li>
-                  <b>Open Houses and Showings:</b> Schedule open houses and private showings to showcase your home to potential buyers.
+                  <b>Open Houses and Showings:</b> Schedule open houses and
+                  private showings to showcase your home to potential buyers.
                 </li>
               </div>
               <br></br>
@@ -78,8 +90,10 @@ export default function Buyers() {
               <div>
                 <h3>List Your Home with Me</h3>
                 <p>
-                Ready to sell your home? List your property with us and let our team handle the rest. We're dedicated to helping you sell your home quickly and for the best price possible. Contact us today to get started!
-                  <Link href="/">Contact Me</Link>
+                  Ready to sell your home? List your property with us and let
+                  our team handle the rest. We're dedicated to helping you sell
+                  your home quickly and for the best price possible. Contact us
+                  today to get started! <Link href="/">Contact Me</Link>
                 </p>
               </div>
               <br></br>
