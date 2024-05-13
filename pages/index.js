@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { Jumbotron, Container } from 'reactstrap';
 import { Row, Col, Button } from 'reactstrap';
 import BaseLayout from './components/layouts/BaseLayouts.js';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 export default function Index() {
   const MainStyle = {
