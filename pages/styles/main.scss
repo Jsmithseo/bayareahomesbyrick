@@ -277,22 +277,6 @@ body {
   }
 }
 
-.jumbtron {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 500px;
-  background-color: #20629e;
-}
-
-.jumbtron.putting {
-  background-image: url('../../public/bannerImage2.jpeg') !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 300px;
-}
-
 .img-fluid.client {
   height: auto;
 }
@@ -470,3 +454,11 @@ li {
 * {
   font-family: avenir !important;
 }
+
+div#IDX-quicksearch-33746 {
+  margin-right: 950px;
+}
+
+// .jumbtron {
+//   background-image: url('/public/background_hero.png');
+// }

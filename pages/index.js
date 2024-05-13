@@ -3,40 +3,8 @@ import React from 'react';
 // import MaterialContactform from './components/MaterialContactform';
 import Link from 'next/link';
 import { Jumbotron, Container } from 'reactstrap';
-
 import { Row, Col, Button } from 'reactstrap';
 import BaseLayout from './components/layouts/BaseLayouts.js';
-
-const items = [
-  {
-    src: '/testimonial1.png',
-    altText: 'Slide 1',
-    caption: '',
-    header: '',
-    key: '1',
-  },
-  {
-    src: '/testimonial2.png',
-    altText: 'Slide 2',
-    caption: '',
-    header: '',
-    key: '2',
-  },
-  {
-    src: '/testimonial3.png',
-    altText: 'Slide 3',
-    caption: '',
-    header: '',
-    key: '3',
-  },
-  {
-    src: '/testimonials4.png',
-    altText: 'Slide 4',
-    caption: '',
-    header: '',
-    key: '3',
-  },
-];
 
 export default function Index() {
   const MainStyle = {
@@ -57,21 +25,25 @@ export default function Index() {
     <BaseLayout>
       <div id="idxStart"></div>
       <div id="idxStop"></div>
+
       <div className="jumbtron">
         <div className="container">
-          <center>
-            <h1 className="display-3">Bay Area Home By Rick</h1>
-            <Button>
-              <Link href="https://bayareahomesbyrick.idxbroker.com/idx/search/advanced">
-                Search Homes For Sale
-              </Link>
-            </Button>
-            <br></br>
-            <br></br>
-            <br></br>
+          <h1 className="display-3">Bay Area Home By Rick</h1>
 
-            <h2>This site is currently under construction.</h2>
-          </center>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `
+
+                    <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-33746" src="//bayareahomesbyrick.idxbroker.com/idx/quicksearchjs.php?widgetid=33746"></script>       `,
+            }}
+          />
+          {/* */}
+
+          <br></br>
+          <br></br>
+          <br></br>
+
+          <h2>This site is currently under construction.</h2>
         </div>
       </div>
       <Container>
@@ -207,14 +179,9 @@ export default function Index() {
         <br></br>
         <br></br>
         <Row className="lessonSection">
-          <Col xs="6" sm="6" md="6" lg="6">
+          <Col xs="12" sm="12" md="6" lg="6">
             <h2 className="lessonTitle">Buyers</h2>
             <div className="mobileView">
-              <img
-                src="/lesson3.png" // Replace with your image path
-                alt="Image"
-                className="img-fluid lesson"
-              />
             </div>
             <br />
 
@@ -226,7 +193,7 @@ export default function Index() {
             </p>
             <Link href="/Buyers"> Learn More</Link>
           </Col>
-          <Col xs="6" sm="6" md="6" lg="6">
+          <Col xs="12" sm="12" md="6" lg="6">
             <h2 className="lessonTitle">Sellers</h2>
             <p>
               Thinking of selling your home? Our team of dedicated real estate
@@ -237,19 +204,19 @@ export default function Index() {
             <Link href="/Sellers"> Learn More</Link>
           </Col>
         </Row>
-       
+
         <br />
         <br />
-       
+
         <div
-                  dangerouslySetInnerHTML={{
-                    __html: `
+          dangerouslySetInnerHTML={{
+            __html: `
 
                     <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-33749" src="//bayareahomesbyrick.idxbroker.com/idx/mapwidgetjs.php?widgetid=33749"></script>
       `,
-                  }}
-                />
-                <br></br>
+          }}
+        />
+        <br></br>
       </Container>
     </BaseLayout>
   );
