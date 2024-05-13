@@ -31,14 +31,8 @@ export default function About() {
       </div>
       <div className="container about">
         <Row>
-          <Col md="6">
-            {/* <img
-              src="/headshot.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid"
-            /> */}
-          </Col>
-          <Col md="6">
+  
+          <Col md="12">
             <div className="bio-content">
               <p>
                 Rick Crisostomo is a dedicated real estate professional known
@@ -76,7 +70,6 @@ export default function About() {
           </Col>
         </Row>
       </div>
-      <div></div>
     </BaseLayout>
   );
 }
