@@ -23,7 +23,7 @@ const BaseLayout = (props) => {
               </p>
               <p className="contactInfo">Business: (707) 749-6329</p>
               <p className="contactInfo">Mobile: (707) 853-8610</p>
-              <p className="contactInfo">rick.crisostomo@coldwellbanker.com</p>
+              <p className="contactInfo">federick.crisostomo@solanopacific.com</p>
               <p className="contactInfo"> CalRE #: 01126204</p>
             </Col>
           </Row>

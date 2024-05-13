@@ -29,6 +29,7 @@ export default function Index() {
       <div id="idxStop"></div>
 
       <div className="jumbtron">
+     
         <div className="container">
           <h1 className="display-3">Bay Area Home By Rick</h1>
 
