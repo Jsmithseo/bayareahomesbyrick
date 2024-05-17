@@ -100,7 +100,7 @@ export default function Index() {
         <Row>
           <Col xs="12" sm="4">
             <center>
-              <h3>Vallejo Homes for Sale</h3>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/vallejo-homes"> <h3>Vallejo Homes for Sale</h3></Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/vallejo-homes">
               <img
@@ -112,7 +112,7 @@ export default function Index() {
           </Col>
           <Col xs="12" sm="4">
             <center>
-              <h3>Benicia Homes for Sale</h3>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/benicia-homes-for-sale"><h3>Benicia Homes for Sale</h3></Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/benicia-homes-for-sale">
               <img
@@ -124,7 +124,7 @@ export default function Index() {
           </Col>
           <Col xs="12" sm="4">
             <center>
-              <h3>Fairfield Homes for Sale</h3>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/fairfield-homes-for-sale"> <h3>Fairfield Homes for Sale</h3></Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/fairfield-homes-for-sale">
               <img
@@ -141,7 +141,7 @@ export default function Index() {
         <Row>
           <Col xs="12" sm="4">
             <center>
-              <h3>Grass Valley Homes for Sale</h3>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/grass-valley-homes-for-sale">  <h3>Grass Valley Homes for Sale</h3></Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/grass-valley-homes-for-sale">
               <img
@@ -153,7 +153,7 @@ export default function Index() {
           </Col>
           <Col xs="12" sm="4">
             <center>
-              <h3>Vacaville Homes for Sale</h3>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/vacaville-homes-for-sale"><h3>Vacaville Homes for Sale</h3></Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/vacaville-homes-for-sale">
               <img
@@ -166,7 +166,7 @@ export default function Index() {
 
           <Col xs="12" sm="4">
             <center>
-              <h3>Cordelia Homes for Sale</h3>
+            <Link href="https://bayareahomesbyrick.idxbroker.com/i/cordelia-home-for-sale-"> <h3>Cordelia Homes for Sale</h3></Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/cordelia-home-for-sale-">
               <img
