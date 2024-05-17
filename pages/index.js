@@ -50,7 +50,6 @@ export default function Index() {
       </div>
       <Container>
         <Row className="aboutSection">
-          <h2 className="aboutTitleMobile">About Rick</h2>
           <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/4727-hummingbird-ct-fairfield">
               <img
