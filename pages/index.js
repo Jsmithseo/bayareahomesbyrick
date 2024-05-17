@@ -50,7 +50,7 @@ export default function Index() {
       </div>
       <Container>
         <Row className="aboutSection">
-          <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
+          <Col xs="12" sm="12" md="12" lg="offset-4" xl="offset-4">
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/4727-hummingbird-ct-fairfield">
               <img
                 src="/featured_listing.jpg" // Replace with your image path
@@ -59,7 +59,7 @@ export default function Index() {
               />
             </Link>
           </Col>
-          <Col xs="12" sm="12" md="6" lg="offset-4">
+          <Col xs="12" sm="12" md="12" lg="offset-4">
             <h2 className="aboutTitle">Featured Listing</h2>
             <h3>
               4727 Hummingbird Ct Fairfield, CA 94534 <br></br>
