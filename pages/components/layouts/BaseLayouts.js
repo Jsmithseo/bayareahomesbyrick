@@ -5,10 +5,6 @@ const BaseLayout = (props) => {
   const { className, user, loading, children } = props;
   return (
     <div className="layout-container">
-           <div>
-       <idxStart></idxStart>
-    <idxStop></idxStop>
-    </div>
       
       <Header user={user} loading={loading} />
       <main className={`cover ${className}`}>

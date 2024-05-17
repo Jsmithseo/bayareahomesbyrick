@@ -22,10 +22,7 @@ const MyHeader = () => {
    
     
     <Navbar color="light" light expand="md">
-          <div>
-       <idxStart></idxStart>
-    <idxStop></idxStop>
-    </div>
+
       <NavbarBrand href="/">
         {/* <img
           src="/brandname.png" // Replace with your image path
