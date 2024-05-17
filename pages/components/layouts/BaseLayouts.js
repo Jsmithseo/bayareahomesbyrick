@@ -14,7 +14,7 @@ const BaseLayout = (props) => {
         <Container>
           <Row>
             <Col sm="12" xs="12" md="4" lg="4">
-              <h2 className="contactTitle">Contact:</h2>
+              <h1 className="contactTitle">Contact:</h1>
             </Col>
 
             <Col sm="12" xs="12" md="4" lg="4">
