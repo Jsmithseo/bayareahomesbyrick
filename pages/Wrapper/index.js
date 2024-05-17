@@ -3,6 +3,7 @@ import { Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayouts';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const MainStyle = {
   overflowX: 'hidden',
