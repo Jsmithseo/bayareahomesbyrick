@@ -30,9 +30,7 @@ export default function Index() {
       <div className="jumbtron">
   
         <div className="container">
-          <idxStart></idxStart>
-          <idxStop></idxStop>
-          
+       
         <br></br>
           <br></br>
           <br></br>
