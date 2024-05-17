@@ -20,11 +20,7 @@ export default function About() {
       <div className="jumbtron">
         <div className="container">
           <center>
-            {/* <img
-              src="/logo.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid logo"
-            /> */}
+
             <h1 className="display-3">About Rick</h1>
           </center>
         </div>

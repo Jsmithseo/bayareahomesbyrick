@@ -459,9 +459,9 @@ div#IDX-quicksearch-33746 {
   margin-right: 950px;
 }
 
-.jumbtron {
-  background-color: #1F629D;
-}
+// .jumbtron {
+//   background-color: #1F629D;
+// }
 
 .IDX-qsLabel {
   color: white!important;
@@ -479,3 +479,15 @@ img.img-fluid.client {
 div#IDX-quicksearch-33746 {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+div.jumbtron {
+  background-image: url('/jumbrotronImage.png')!important;
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+form#IDX-quicksearchForm-33746 {
+  background-color: #1F629D;
+}
+

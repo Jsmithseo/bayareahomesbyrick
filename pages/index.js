@@ -25,14 +25,15 @@ export default function Index() {
   };
   return (
     <BaseLayout>
-      <div id="idxStart"></div>
-      <div id="idxStop"></div>
+  
 
       <div className="jumbtron">
-     
+  
         <div className="container">
-          <h1 className="display-3">Bay Area Home By Rick</h1>
-
+          
+        <br></br>
+          <br></br>
+          <br></br>
           <div
             dangerouslySetInnerHTML={{
               __html: `
@@ -45,8 +46,6 @@ export default function Index() {
           <br></br>
           <br></br>
           <br></br>
-
-          <h2>This site is currently under construction.</h2>
         </div>
       </div>
       <Container>
