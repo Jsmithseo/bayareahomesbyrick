@@ -485,9 +485,13 @@ div.jumbtron {
   background-repeat: no-repeat;
   background-position: center; /* Center the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 form#IDX-quicksearchForm-33746 {
   background-color: #1F629D;
 }
+
+
 
