@@ -63,6 +63,7 @@ export default function Index() {
             <h2 className="aboutTitle">Featured Listing</h2>
             <h3>
               4727 Hummingbird Ct Fairfield, CA 94534 <br></br>
+             <i>Listed home and found buyer for seller at open house.</i>
             </h3>
             <p>
               4727 Hummingbird Ct in Fairfield, CA 94534 presents a remarkable
