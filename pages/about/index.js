@@ -27,7 +27,25 @@ export default function About() {
       </div>
       <div className="container about">
         <Row>
-  
+          <Col md="12">
+            <div className="rickContainer">
+              <center>
+                             <div className="rickPhoto">
+              <img
+              src="/rick.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid logo"
+            /> 
+              </div>
+              </center>
+
+
+            </div>
+<br/>
+<br/>
+
+          </Col>
+        
           <Col md="12">
             <div className="bio-content">
               <p>
