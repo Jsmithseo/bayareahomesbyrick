@@ -15,6 +15,13 @@ const BaseLayout = (props) => {
           <Row>
             <Col sm="12" xs="12" md="4" lg="4">
               <h1 className="contactTitle">Contact:</h1>
+              <div className="rickPhotoFooter">
+              <img
+              src="/rick2.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid logo"
+            /> 
+              </div>
             </Col>
 
             <Col sm="12" xs="12" md="4" lg="4">

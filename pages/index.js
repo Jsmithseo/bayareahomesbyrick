@@ -34,6 +34,10 @@ export default function Index() {
         <br></br>
           <br></br>
           <br></br>
+          <Row>
+
+
+          <Col md="8">
           <div
             dangerouslySetInnerHTML={{
               __html: `
@@ -41,6 +45,22 @@ export default function Index() {
                     <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-33746" src="//bayareahomesbyrick.idxbroker.com/idx/quicksearchjs.php?widgetid=33746"></script>       `,
             }}
           />
+          </Col>
+
+          <Col md="2">
+            <div className="rickHeader">
+            <img
+              src="/rick2.png" // Replace with your image path
+              alt="Image"
+              className="img-fluid logo"
+            /> 
+            </div>
+
+          </Col>
+
+          </Row>
+
+
           {/* */}
 
           <br></br>

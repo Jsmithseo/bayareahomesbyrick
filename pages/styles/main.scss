@@ -523,3 +523,20 @@ h2 {
 
   }
 }
+
+.rickPhotoFooter {
+  width: 300px; /* Set your desired width */
+  height: 100px; /* Set your desired height */
+
+}
+
+
+.rickHeader {
+
+  position: absolute; /* Position the image absolutely within the container */
+  top: 0; /* Pin to the top */
+  right: 0; /* Pin to the right */
+  width: 100px; /* Set the desired width of the image */
+  height: auto; /* Maintain aspect ratio */
+
+}
