@@ -7,7 +7,6 @@ import { Row, Col, Button } from 'reactstrap';
 import BaseLayout from './components/layouts/BaseLayouts.js';
 import 'bootstrap/dist/css/bootstrap.css';
 
-
 export default function Index() {
   const MainStyle = {
     overflowX: 'hidden',
@@ -25,47 +24,37 @@ export default function Index() {
   };
   return (
     <BaseLayout>
-  
-
       <div className="jumbtron">
-  
         <div className="container">
-       
-        <br></br>
+          <br></br>
           <br></br>
           <br></br>
           <Row>
-
-
-          <Col md="7">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `
+            <Col md="6">
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `
 
                     <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-33746" src="//bayareahomesbyrick.idxbroker.com/idx/quicksearchjs.php?widgetid=33746"></script>       `,
-            }}
-          />
-          </Col>
+                }}
+              />
+            </Col>
 
-          <Col md="2">
-            <div className="rickHeader">
-            <img
-              src="/rick2.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid logo"
-            /> 
-                       <p className="contactInfo">Rick Crisostomo</p>
+            <Col md="6">
+              <div className="rickHeader">
+                <img
+                  src="/rick2.png" // Replace with your image path
+                  alt="Image"
+                  className="img-fluid logo"
+                />
+                <p className="contactInfo">Rick Crisostomo</p>
 
-<p className="contactInfo">(707) 853-8610</p>
+                <p className="contactInfo">(707) 853-8610</p>
 
-<p className="contactInfo"> CalRE #: 01126204</p>
-
-            </div>
- 
-          </Col>
-
+                <p className="contactInfo"> CalRE #: 01126204</p>
+              </div>
+            </Col>
           </Row>
-
 
           {/* */}
 
@@ -88,7 +77,7 @@ export default function Index() {
           <Col xs="12" sm="12" md="6" lg="offset-4">
             <h2 className="aboutTitle">Featured Listing</h2>
             <h3>
-             <i>SOLD</i>
+              <i>SOLD</i>
             </h3>
             <p>
               4727 Hummingbird Ct in Fairfield, CA 94534 presents a remarkable
@@ -126,7 +115,10 @@ export default function Index() {
         <Row>
           <Col xs="12" sm="4">
             <center>
-            <Link href="https://bayareahomesbyrick.idxbroker.com/i/vallejo-homes"> <h3>Vallejo Homes for Sale</h3></Link>
+              <Link href="https://bayareahomesbyrick.idxbroker.com/i/vallejo-homes">
+                {' '}
+                <h3>Vallejo Homes for Sale</h3>
+              </Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/vallejo-homes">
               <img
@@ -138,7 +130,9 @@ export default function Index() {
           </Col>
           <Col xs="12" sm="4">
             <center>
-            <Link href="https://bayareahomesbyrick.idxbroker.com/i/benicia-homes-for-sale"><h3>Benicia Homes for Sale</h3></Link>
+              <Link href="https://bayareahomesbyrick.idxbroker.com/i/benicia-homes-for-sale">
+                <h3>Benicia Homes for Sale</h3>
+              </Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/benicia-homes-for-sale">
               <img
@@ -150,7 +144,10 @@ export default function Index() {
           </Col>
           <Col xs="12" sm="4">
             <center>
-            <Link href="https://bayareahomesbyrick.idxbroker.com/i/fairfield-homes-for-sale"> <h3>Fairfield Homes for Sale</h3></Link>
+              <Link href="https://bayareahomesbyrick.idxbroker.com/i/fairfield-homes-for-sale">
+                {' '}
+                <h3>Fairfield Homes for Sale</h3>
+              </Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/fairfield-homes-for-sale">
               <img
@@ -167,7 +164,10 @@ export default function Index() {
         <Row>
           <Col xs="12" sm="4">
             <center>
-            <Link href="https://bayareahomesbyrick.idxbroker.com/i/grass-valley-homes-for-sale">  <h3>Grass Valley Homes for Sale</h3></Link>
+              <Link href="https://bayareahomesbyrick.idxbroker.com/i/grass-valley-homes-for-sale">
+                {' '}
+                <h3>Grass Valley Homes for Sale</h3>
+              </Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/grass-valley-homes-for-sale">
               <img
@@ -179,7 +179,9 @@ export default function Index() {
           </Col>
           <Col xs="12" sm="4">
             <center>
-            <Link href="https://bayareahomesbyrick.idxbroker.com/i/vacaville-homes-for-sale"><h3>Vacaville Homes for Sale</h3></Link>
+              <Link href="https://bayareahomesbyrick.idxbroker.com/i/vacaville-homes-for-sale">
+                <h3>Vacaville Homes for Sale</h3>
+              </Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/vacaville-homes-for-sale">
               <img
@@ -192,7 +194,10 @@ export default function Index() {
 
           <Col xs="12" sm="4">
             <center>
-            <Link href="https://bayareahomesbyrick.idxbroker.com/i/cordelia-home-for-sale-"> <h3>Cordelia Homes for Sale</h3></Link>
+              <Link href="https://bayareahomesbyrick.idxbroker.com/i/cordelia-home-for-sale-">
+                {' '}
+                <h3>Cordelia Homes for Sale</h3>
+              </Link>
             </center>
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/cordelia-home-for-sale-">
               <img
@@ -208,8 +213,7 @@ export default function Index() {
         <Row className="lessonSection">
           <Col xs="12" sm="12" md="6" lg="6">
             <h2 className="lessonTitle">Buyers</h2>
-            <div className="mobileView">
-            </div>
+            <div className="mobileView"></div>
             <br />
 
             <p>

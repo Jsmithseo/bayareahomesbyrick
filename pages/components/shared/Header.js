@@ -18,11 +18,7 @@ const MyHeader = () => {
   };
 
   return (
-
-   
-    
     <Navbar color="light" light expand="md">
-
       <NavbarBrand href="/">
         {/* <img
           src="/brandname.png" // Replace with your image path
