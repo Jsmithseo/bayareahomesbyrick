@@ -37,7 +37,7 @@ export default function Index() {
           <Row>
 
 
-          <Col md="8">
+          <Col md="7">
           <div
             dangerouslySetInnerHTML={{
               __html: `
@@ -54,8 +54,14 @@ export default function Index() {
               alt="Image"
               className="img-fluid logo"
             /> 
-            </div>
+                       <p className="contactInfo">Rick Crisostomo</p>
 
+<p className="contactInfo">(707) 853-8610</p>
+
+<p className="contactInfo"> CalRE #: 01126204</p>
+
+            </div>
+ 
           </Col>
 
           </Row>
