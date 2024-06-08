@@ -540,3 +540,27 @@ h2 {
 .img-fluid.logo {
   padding-top: 0;
 }
+
+
+nav.navbar.navbar-expand-md.navbar-light.bg-light {
+  background-color: #20629E!important;
+}
+
+.headerLogo {
+  position: absolute; /* Position the image absolutely within the container */
+  top: 0; /* Pin to the top */
+  right: 0; /* Pin to the right */
+  height: auto; /* Maintain aspect ratio */
+
+}
+
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for your mobile breakpoint */
+  .headerLogo  {
+      display: none;
+  }
+}
+
+a.nav-link {
+  color: white;
+}

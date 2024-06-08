@@ -40,6 +40,14 @@ const MyHeader = () => {
           </NavItem>
           <NavItem></NavItem>
         </Nav>
+        <div className="headerLogo">
+        <img
+                src="/coldwell_banker_logo.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid"
+              />
+        </div>
+           
       </Collapse>
     </Navbar>
   );
