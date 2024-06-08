@@ -66,6 +66,40 @@ export default function Index() {
       <Container>
         <Row className="aboutSection">
           <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
+            <Link href="https://bayareahomesbyrick.idxbroker.com/idx/results/listings?csv_listingID=324043751&a_statusCategory%5B%5D=active&a_statusCategory%5B%5D=sold">
+              <img
+                src="/baker.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid client"
+              />
+            </Link>
+          </Col>
+          <Col xs="12" sm="12" md="6" lg="offset-4">
+            <h2 className="aboutTitle">Featured Listing</h2>
+            <h3>
+              <i>For Sale</i>
+            </h3>
+            <p>
+              <b>240 Baker St, Benicia, CA 94510</b> Welcome to this charming
+              single-family home with a partial view of the straits. If you've
+              been looking for a home to fix up, this could be the perfect
+              opportunity. Built in 1975, this property features deferred
+              maintenance throughout, giving you the chance to add your personal
+              touch. The spacious yard offers plenty of room and is in need of
+              landscaping, providing a blank canvas for your outdoor vision.
+              Single-family home Built in 1975 5,663 sq ft lot $392 per sq ft
+              Don't miss out on this potential-filled property!
+            </p>
+            <Link
+              className="aboutlink"
+              href="https://bayareahomesbyrick.idxbroker.com/idx/results/listings?csv_listingID=324043751&a_statusCategory%5B%5D=active&a_statusCategory%5B%5D=sold"
+            >
+              View Listing
+            </Link>
+          </Col>
+        </Row>
+        <Row className="aboutSection">
+          <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
             <Link href="https://bayareahomesbyrick.idxbroker.com/i/4727-hummingbird-ct-fairfield">
               <img
                 src="/featured_listing.jpg" // Replace with your image path
@@ -80,7 +114,7 @@ export default function Index() {
               <i>SOLD</i>
             </h3>
             <p>
-              4727 Hummingbird Ct in Fairfield, CA 94534 presents a remarkable
+              <b>4727 Hummingbird Ct in Fairfield, CA 94534</b> presents a remarkable
               opportunity to experience the quintessential Fairfield lifestyle.
               This spacious and meticulously crafted home boasts 5 bedrooms, 3
               baths, and a thoughtfully designed 2763 sqft floorplan, offering
