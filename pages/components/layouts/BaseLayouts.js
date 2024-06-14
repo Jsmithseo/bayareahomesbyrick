@@ -26,7 +26,7 @@ const BaseLayout = (props) => {
             </Col>
 
             <Col xs="12" sm="12"  md="4" lg="4" className="details">
-            <span className="name">Federick Crisostom</span>
+            <span className="name">Federick Crisostomo</span>
               <p className="contactInfo">
                 Real Estate Salesperson Coldwell Banker Solano Pacific
               </p>

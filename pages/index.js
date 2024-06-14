@@ -30,7 +30,7 @@ export default function Index() {
           <br></br>
           <br></br>
           <Row>
-            <Col md="6">
+            <Col sm="12" md="6">
               <div
                 dangerouslySetInnerHTML={{
                   __html: `
@@ -40,7 +40,7 @@ export default function Index() {
               />
             </Col>
 
-            <Col md="6">
+            <Col sm="12" md="6">
               <div className="rickHeader">
                 <img
                   src="/rick2.png" // Replace with your image path
