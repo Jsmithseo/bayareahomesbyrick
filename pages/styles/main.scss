@@ -564,13 +564,23 @@ nav.navbar.navbar-expand-md.navbar-light.bg-light {
 
     display: none;
   }
-  .rickPhotoFooter {
-    display: none;
-  }
-  
 
+img.img-fluid.logo {
+    padding-top: 0;
+ }
+ .details{
+  padding-top: 100px;
 }
+}
+
+
 
 a.nav-link {
   color: white;
+}
+
+.name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
 }
