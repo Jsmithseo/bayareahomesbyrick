@@ -273,14 +273,14 @@ export default function Index() {
         <br />
         <br />
 
-        <div
+        {/* <div
           dangerouslySetInnerHTML={{
             __html: `
 
                     <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-33749" src="//bayareahomesbyrick.idxbroker.com/idx/mapwidgetjs.php?widgetid=33749"></script>
       `,
           }}
-        />
+        /> */}
         <br></br>
       </Container>
     </BaseLayout>
