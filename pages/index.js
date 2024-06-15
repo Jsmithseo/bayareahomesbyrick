@@ -45,7 +45,7 @@ export default function Index() {
                 <img
                   src="/rick2.png" // Replace with your image path
                   alt="Image"
-                  className="img-fluid logo"
+                  className="img-fluid logo header"
                 />
                 <p className="contactInfo">Rick Crisostomo</p>
 
