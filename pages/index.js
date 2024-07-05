@@ -77,7 +77,7 @@ export default function Index() {
           <Col xs="12" sm="12" md="6" lg="offset-4">
             <h2 className="aboutTitle">Featured Listing</h2>
             <h3>
-              <i>For Sale</i>
+              <i>SOLD </i>
             </h3>
             <p>
               <b>240 Baker St, Benicia, CA 94510</b> Welcome to this charming
